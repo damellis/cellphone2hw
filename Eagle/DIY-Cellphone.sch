@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19831,6 +19831,14 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <text x="2" y="4" size="1.27" layer="21" font="fixed">+</text>
 <text x="2" y="-1" size="1.27" layer="21" font="fixed">-</text>
 </package>
+<package name="SPEAKER-6.4MM">
+<description>Knowles Mini-Siren Speaker (SR6438NWS-000)
+Digi-Key #423-1142-ND</description>
+<pad name="P$1" x="-1.27" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$2" x="1.27" y="0" drill="0.8" shape="long" rot="R90"/>
+<circle x="0" y="0" radius="3.2" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.65" width="0.0508" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS2">
@@ -19915,6 +19923,23 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <wire x1="-5.08" y1="-2.54" x2="0" y2="0" width="0.254" layer="94" curve="-53.130102"/>
 <text x="-7.62" y="2.54" size="1.27" layer="94" font="fixed">+</text>
 </symbol>
+<symbol name="SPEAKER">
+<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SWITCH-JLEAD" prefix="S" uservalue="yes">
@@ -19991,6 +20016,22 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MINI-SIREN">
+<gates>
+<gate name="G$1" symbol="SPEAKER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPEAKER-6.4MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -23541,50 +23582,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X02">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-<package name="1X02/90">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
-<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
-<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
-<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
-<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
-<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
-</package>
 <package name="1X06">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
@@ -23695,16 +23692,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
 <symbol name="PINHD6">
 <wire x1="-6.35" y1="-7.62" x2="1.27" y2="-7.62" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-7.62" x2="1.27" y2="10.16" width="0.4064" layer="94"/>
@@ -23721,32 +23708,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="/90" package="1X02/90">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PINHD-1X6" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
@@ -24282,7 +24243,6 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R1206" value="4.7K"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="SOD123"/>
-<part name="SPK'" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="-JST-2MM-SMT"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
@@ -24304,7 +24264,6 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <part name="C11" library="rcl" deviceset="CPOL-US" device="D/7343-31R" value="1000uF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="0.1uF"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C1206" value="0.1uF"/>
-<part name="SPK" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="4.7K"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R1206"/>
@@ -24315,6 +24274,7 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <part name="SJ1" library="jumper" deviceset="SJ2W" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ2W" device=""/>
 <part name="C16" library="rcl" deviceset="CPOL-US" device="D/7343-31R" value="1000uF"/>
+<part name="U$5" library="cellphone" deviceset="MINI-SIREN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24389,7 +24349,6 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <instance part="T1" gate="G$1" x="190.5" y="213.36"/>
 <instance part="R6" gate="G$1" x="182.88" y="213.36"/>
 <instance part="D1" gate="G$1" x="195.58" y="223.52" rot="R90"/>
-<instance part="SPK'" gate="G$1" x="114.3" y="233.68" rot="R180"/>
 <instance part="JP3" gate="G$1" x="358.14" y="213.36" rot="R180"/>
 <instance part="GND14" gate="1" x="340.36" y="254"/>
 <instance part="GND17" gate="1" x="284.48" y="254"/>
@@ -24411,7 +24370,6 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <instance part="C11" gate="G$1" x="289.56" y="213.36"/>
 <instance part="C13" gate="G$1" x="325.12" y="213.36"/>
 <instance part="C12" gate="G$1" x="-53.34" y="76.2"/>
-<instance part="SPK" gate="G$1" x="124.46" y="233.68" rot="R180"/>
 <instance part="T2" gate="G$1" x="83.82" y="259.08" rot="MR0"/>
 <instance part="R5" gate="G$1" x="93.98" y="259.08" rot="R180"/>
 <instance part="R8" gate="G$1" x="81.28" y="271.78" rot="R90"/>
@@ -24422,6 +24380,7 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <instance part="SJ1" gate="G$1" x="12.7" y="-5.08" rot="R90"/>
 <instance part="SJ2" gate="G$1" x="43.18" y="-7.62" rot="R90"/>
 <instance part="C16" gate="G$1" x="302.26" y="213.36"/>
+<instance part="U$5" gate="G$1" x="149.86" y="233.68" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -24836,12 +24795,11 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <pinref part="U7" gate="G$1" pin="21-SPK1N"/>
 </segment>
 <segment>
-<pinref part="SPK'" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="233.68" x2="127" y2="233.68" width="0.1524" layer="91"/>
 <label x="137.16" y="233.68" size="1.778" layer="95"/>
-<pinref part="SPK" gate="G$1" pin="2"/>
-<wire x1="127" y1="233.68" x2="142.24" y2="233.68" width="0.1524" layer="91"/>
-<junction x="127" y="233.68"/>
+<wire x1="116.84" y1="233.68" x2="144.78" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="233.68" x2="144.78" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="238.76" x2="149.86" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPK1P" class="0">
@@ -24852,12 +24810,11 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <pinref part="U7" gate="G$1" pin="22-SPK1P"/>
 </segment>
 <segment>
-<pinref part="SPK'" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="231.14" x2="127" y2="231.14" width="0.1524" layer="91"/>
 <label x="137.16" y="231.14" size="1.778" layer="95"/>
-<pinref part="SPK" gate="G$1" pin="1"/>
-<wire x1="127" y1="231.14" x2="142.24" y2="231.14" width="0.1524" layer="91"/>
-<junction x="127" y="231.14"/>
+<wire x1="116.84" y1="231.14" x2="142.24" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="228.6" x2="142.24" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MIC1N" class="0">
