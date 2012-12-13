@@ -19848,6 +19848,16 @@ Digi-Key #423-1142-ND</description>
 <circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
 <text x="-1.905" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="414-VA5R">
+<description>PAS414HR-VA5R from Taiyo Yuden (Digi-Key #587-2158-1-ND)</description>
+<smd name="+" x="-3.35" y="0" dx="1" dy="2" layer="1"/>
+<smd name="-" x="3.35" y="0" dx="1.1" dy="3" layer="1"/>
+<circle x="0" y="0" radius="2.4" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.5" x2="1.9" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.5" x2="1.9" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="1" x2="-2.6" y2="1" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-1" x2="-2.6" y2="-1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS2">
@@ -20039,6 +20049,15 @@ Digi-Key #423-1142-ND</description>
 </gates>
 <devices>
 <device name="" package="EP-A">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAS" package="414-VA5R">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
@@ -24309,7 +24328,7 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="4.7K"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="U$4" library="cellphone" deviceset="SUPERCAP" device=""/>
+<part name="U$4" library="cellphone" deviceset="SUPERCAP" device="PAS"/>
 <part name="8MHZ" library="fab" deviceset="CRYSTAL" device=""/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C1206" value="18pF"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C1206" value="18pF"/>
