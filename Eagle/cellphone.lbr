@@ -740,26 +740,26 @@
 </polygon>
 </package>
 <package name="NOKIA_5100_SPARKFUN">
-<pad name="P$1" x="-8.89" y="20" drill="0.8"/>
-<pad name="P$2" x="-6.35" y="20" drill="0.8"/>
-<pad name="P$3" x="-3.81" y="20" drill="0.8"/>
-<pad name="P$4" x="-1.27" y="20" drill="0.8"/>
-<pad name="P$5" x="1.27" y="20" drill="0.8"/>
-<pad name="P$6" x="3.81" y="20" drill="0.8"/>
-<pad name="P$7" x="6.35" y="20" drill="0.8"/>
-<pad name="P$8" x="8.89" y="20" drill="0.8"/>
+<pad name="P$1" x="-8.89" y="20" drill="1"/>
+<pad name="P$2" x="-6.35" y="20" drill="1"/>
+<pad name="P$3" x="-3.81" y="20" drill="1"/>
+<pad name="P$4" x="-1.27" y="20" drill="1"/>
+<pad name="P$5" x="1.27" y="20" drill="1"/>
+<pad name="P$6" x="3.81" y="20" drill="1"/>
+<pad name="P$7" x="6.35" y="20" drill="1"/>
+<pad name="P$8" x="8.89" y="20" drill="1"/>
 <wire x1="-22.86" y1="22.86" x2="22.86" y2="22.86" width="0.127" layer="21"/>
 <wire x1="22.86" y1="22.86" x2="22.86" y2="-22.86" width="0.127" layer="21"/>
 <wire x1="22.86" y1="-22.86" x2="-22.86" y2="-22.86" width="0.127" layer="21"/>
 <wire x1="-22.86" y1="-22.86" x2="-22.86" y2="22.86" width="0.127" layer="21"/>
-<pad name="P$9" x="-8.89" y="-20" drill="0.8"/>
-<pad name="P$10" x="-6.35" y="-20" drill="0.8"/>
-<pad name="P$11" x="-3.81" y="-20" drill="0.8"/>
-<pad name="P$12" x="-1.27" y="-20" drill="0.8"/>
-<pad name="P$13" x="1.27" y="-20" drill="0.8"/>
-<pad name="P$14" x="3.81" y="-20" drill="0.8"/>
-<pad name="P$15" x="6.35" y="-20" drill="0.8"/>
-<pad name="P$16" x="8.89" y="-20" drill="0.8"/>
+<pad name="P$9" x="-8.89" y="-20" drill="1"/>
+<pad name="P$10" x="-6.35" y="-20" drill="1"/>
+<pad name="P$11" x="-3.81" y="-20" drill="1"/>
+<pad name="P$12" x="-1.27" y="-20" drill="1"/>
+<pad name="P$13" x="1.27" y="-20" drill="1"/>
+<pad name="P$14" x="3.81" y="-20" drill="1"/>
+<pad name="P$15" x="6.35" y="-20" drill="1"/>
+<pad name="P$16" x="8.89" y="-20" drill="1"/>
 <wire x1="-20" y1="17" x2="20" y2="17" width="0.127" layer="21"/>
 <wire x1="20" y1="17" x2="20" y2="-17" width="0.127" layer="21"/>
 <wire x1="20" y1="-17" x2="-20" y2="-17" width="0.127" layer="21"/>
