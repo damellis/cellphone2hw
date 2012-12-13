@@ -19839,6 +19839,15 @@ Digi-Key #423-1142-ND</description>
 <circle x="0" y="0" radius="3.2" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.65" width="0.0508" layer="21"/>
 </package>
+<package name="B3U-1000P">
+<description>Omron B3U-1000P (Digi-Key #SW1020CT-ND)</description>
+<smd name="P$1" x="-1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
+<text x="-1.905" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TS2">
@@ -19940,6 +19949,23 @@ Digi-Key #423-1142-ND</description>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
+<symbol name="BUTTON-2">
+<wire x1="-3.175" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<text x="-1.905" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.175" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SWITCH-JLEAD" prefix="S" uservalue="yes">
@@ -20032,6 +20058,22 @@ Digi-Key #423-1142-ND</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUTTON-2">
+<gates>
+<gate name="G$1" symbol="BUTTON-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3U-1000P">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24275,6 +24317,7 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <part name="SJ2" library="jumper" deviceset="SJ2W" device=""/>
 <part name="C16" library="rcl" deviceset="CPOL-US" device="D/7343-31R" value="1000uF"/>
 <part name="U$5" library="cellphone" deviceset="MINI-SIREN" device=""/>
+<part name="U$6" library="cellphone" deviceset="BUTTON-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24381,6 +24424,7 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <instance part="SJ2" gate="G$1" x="43.18" y="-7.62" rot="R90"/>
 <instance part="C16" gate="G$1" x="302.26" y="213.36"/>
 <instance part="U$5" gate="G$1" x="149.86" y="233.68" rot="R270"/>
+<instance part="U$6" gate="G$1" x="-66.04" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -24655,8 +24699,8 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="-"/>
-<wire x1="71.12" y1="25.4" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
-<label x="68.58" y="17.78" size="1.778" layer="95"/>
+<wire x1="71.12" y1="25.4" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<label x="68.58" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -24665,6 +24709,12 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <wire x1="-68.58" y1="96.52" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-68.58" y="96.52"/>
 <label x="-71.12" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-76.2" y1="109.22" x2="-76.2" y2="93.98" width="0.1524" layer="91"/>
+<label x="-78.74" y="91.44" size="1.778" layer="95"/>
+<wire x1="-76.2" y1="109.22" x2="-71.12" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="DISP_DATA" class="0">
@@ -25137,6 +25187,9 @@ Source: http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE10.pdf</de
 <wire x1="-55.88" y1="109.22" x2="-55.88" y2="114.3" width="0.1524" layer="91"/>
 <label x="-55.88" y="109.22" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-55.88" y1="109.22" x2="-60.96" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-55.88" y="109.22"/>
+<pinref part="U$6" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>

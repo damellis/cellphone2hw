@@ -2296,6 +2296,15 @@ Digi-Key #423-1142-ND</description>
 <circle x="0" y="0" radius="3.2" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.65" width="0.0508" layer="21"/>
 </package>
+<package name="B3U-1000P">
+<description>Omron B3U-1000P (Digi-Key #SW1020CT-ND)</description>
+<smd name="P$1" x="-1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
+<text x="-1.905" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="transistor">
@@ -2823,6 +2832,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="50.579" y="22.498" size="1.016" layer="28" rot="MR180"/>
 </element>
 <element name="U$5" library="cellphone" package="SPEAKER-6.4MM" value="MINI-SIREN" x="120.65" y="29.21" rot="R270"/>
+<element name="U$6" library="cellphone" package="B3U-1000P" value="BUTTON-2" x="120.65" y="21.59"/>
 </elements>
 <signals>
 <signal name="VCC" class="1">
@@ -3060,6 +3070,7 @@ design rules under a new name.</description>
 <wire x1="107.315" y1="10.795" x2="120.015" y2="10.795" width="0.254" layer="16"/>
 <wire x1="119.845" y1="9.205" x2="119.845" y2="10.795" width="0.254" layer="1"/>
 <wire x1="119.845" y1="10.795" x2="120.015" y2="10.795" width="0.254" layer="1"/>
+<contactref element="U$6" pad="P$1"/>
 </signal>
 <signal name="DISP_DATA">
 <contactref element="U7" pad="P$1"/>
@@ -3150,8 +3161,9 @@ design rules under a new name.</description>
 <wire x1="91.44" y1="27.94" x2="88.749" y2="27.94" width="0.254" layer="16"/>
 <wire x1="88.749" y1="27.94" x2="88.665" y2="28.024" width="0.254" layer="16"/>
 <contactref element="U$5" pad="P$2"/>
-<wire x1="114.3" y1="19.05" x2="120.65" y2="25.4" width="0.254" layer="1"/>
-<wire x1="120.65" y1="25.4" x2="120.65" y2="27.94" width="0.254" layer="1"/>
+<wire x1="114.3" y1="19.05" x2="117.475" y2="22.225" width="0.254" layer="1"/>
+<wire x1="117.475" y1="22.225" x2="117.475" y2="27.94" width="0.254" layer="1"/>
+<wire x1="117.475" y1="27.94" x2="120.65" y2="27.94" width="0.254" layer="1"/>
 </signal>
 <signal name="MIC1N">
 <contactref element="U7" pad="P$24"/>
@@ -3404,6 +3416,13 @@ design rules under a new name.</description>
 <wire x1="108.55" y1="48.606" x2="110.109" y2="50.165" width="0.254" layer="16"/>
 <wire x1="110.109" y1="50.165" x2="122.806" y2="50.165" width="0.254" layer="16"/>
 <wire x1="122.806" y1="50.165" x2="124.949" y2="52.308" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$2"/>
+<wire x1="122.35" y1="21.59" x2="124.46" y2="21.59" width="0.254" layer="1"/>
+<via x="124.46" y="21.59" extent="1-16" drill="0.6"/>
+<wire x1="124.46" y1="21.59" x2="125.73" y2="22.86" width="0.254" layer="16"/>
+<wire x1="125.73" y1="22.86" x2="125.73" y2="37.465" width="0.254" layer="16"/>
+<wire x1="125.73" y1="37.465" x2="125.489" y2="37.706" width="0.254" layer="16"/>
+<wire x1="125.489" y1="37.706" x2="123.679" y2="37.706" width="0.254" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="C1" pad="1"/>
