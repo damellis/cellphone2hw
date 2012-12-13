@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -835,6 +835,20 @@ Digi-Key #423-1142-ND</description>
 <wire x1="-2.2" y1="1" x2="-2.6" y2="1" width="0.127" layer="21"/>
 <wire x1="-2.2" y1="-1" x2="-2.6" y2="-1" width="0.127" layer="21"/>
 </package>
+<package name="5829">
+<wire x1="-3.683" y1="2.54" x2="-3.683" y2="10.7696" width="0.127" layer="21"/>
+<wire x1="3.683" y1="2.54" x2="3.683" y2="10.7696" width="0.127" layer="21"/>
+<smd name="-" x="0" y="0.635" dx="7.874" dy="2.794" layer="1"/>
+<wire x1="0" y1="0" x2="0" y2="14.478" width="0.127" layer="51"/>
+<wire x1="0" y1="14.478" x2="0" y2="14.605" width="0.127" layer="21"/>
+<wire x1="-3.683" y1="13.208" x2="0" y2="14.478" width="0.127" layer="51"/>
+<wire x1="0" y1="14.478" x2="3.683" y2="13.208" width="0.127" layer="51"/>
+<wire x1="-3.683" y1="11.938" x2="3.683" y2="11.938" width="0.127" layer="51"/>
+<text x="-6.985" y="12.065" size="2.54" layer="21" font="fixed">+</text>
+<smd name="+" x="0" y="13.335" dx="7.874" dy="3.81" layer="1"/>
+<text x="-6.985" y="0" size="2.54" layer="21" font="fixed">-</text>
+<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TFT_160X128">
@@ -1051,6 +1065,18 @@ Digi-Key #423-1142-ND</description>
 <text x="3.175" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="P" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 <pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="CPOL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1353,6 +1379,22 @@ Digi-Key #423-1142-ND</description>
 <connects>
 <connect gate="G$1" pin="P" pad="P$1"/>
 <connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CPOL">
+<gates>
+<gate name="G$1" symbol="CPOL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="5829">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
