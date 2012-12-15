@@ -26715,10 +26715,7 @@ Source: www.kingbright.com</description>
 <net name="N$1" class="0">
 <segment>
 <wire x1="144.78" y1="147.32" x2="144.78" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="154.94" x2="139.7" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="57-CTS"/>
-<pinref part="U7" gate="G$1" pin="58-RTS"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -27483,6 +27480,12 @@ Source: www.kingbright.com</description>
 <pinref part="IC1" gate="G$1" pin="(OC0B/!SS!/PCINT12)PB4"/>
 <pinref part="JP1" gate="A" pin="5"/>
 <wire x1="30.48" y1="76.2" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<wire x1="139.7" y1="154.94" x2="139.7" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U7" gate="G$1" pin="58-RTS"/>
 </segment>
 </net>
 </nets>
