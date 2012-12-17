@@ -37,15 +37,15 @@
 <layer number="41" name="tRestrict" color="14" fill="11" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="12" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -133,7 +133,7 @@
 <hole x="127.508" y="55.118" drill="1.6"/>
 <hole x="67.945" y="55.88" drill="1.6"/>
 <hole x="67.945" y="3.302" drill="1.6"/>
-<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone</text>
+<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone (12/17/2012)</text>
 <text x="4.445" y="8.255" size="1.4224" layer="25" font="fixed">David A. Mellis, mellis@media.mit.edu</text>
 <text x="4.445" y="5.715" size="1.4224" layer="25" font="fixed">High-Low Tech, MIT Media Lab</text>
 <text x="116.205" y="43.18" size="1.016" layer="26" font="fixed" rot="MR270">uC</text>
@@ -2775,9 +2775,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="54.0448" y="4.207" size="1.016" layer="28" rot="MR0"/>
 <attribute name="PN" value="5-1814832-1" x="50.8698" y="9.922" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="L24" library="SmartPrj" package="R0603-ROUND" value="3.3nH Murata LQG18HN3N3S00D" x="55.8228" y="7.255" smashed="yes" rot="MR90">
-<attribute name="NAME" x="54.975" y="5.1498" size="1.016" layer="26" rot="MR0"/>
-</element>
+<element name="L24" library="SmartPrj" package="R0603-ROUND" value="3.3nH Murata LQG18HN3N3S00D" x="55.8228" y="7.255" smashed="yes" rot="MR90"/>
 <element name="X3" library="SmartPrj" package="CON-AMPHENOL_C707_10M006_512_2" value="CCM03-3002 R102" x="100.441" y="20.72" smashed="yes" rot="MR270">
 <attribute name="NAME" x="98.536" y="21.228" size="1.27" layer="49" rot="MR270"/>
 <attribute name="VALUE" x="110.601" y="32.15" size="1.27" layer="28" rot="MR270"/>
@@ -2786,12 +2784,8 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1463072 " x="100.441" y="21.228" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="100.441" y="21.228" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="C8" library="SmartPrj" package="C0603-ROUND" value="3.9pF Murata GQM1885C2A3R9BB01D" x="56.661" y="9.922" smashed="yes" rot="MR0">
-<attribute name="NAME" x="55.356" y="10.687" size="1.016" layer="26" rot="MR270"/>
-</element>
-<element name="L23" library="SmartPrj" package="R0603-ROUND" value="6.8nH Murata LQG18HN6N8J00D" x="57.55" y="7.255" smashed="yes" rot="MR90">
-<attribute name="NAME" x="58.312" y="6.366" size="1.016" layer="26" rot="MR90"/>
-</element>
+<element name="C8" library="SmartPrj" package="C0603-ROUND" value="3.9pF Murata GQM1885C2A3R9BB01D" x="56.661" y="9.922" smashed="yes" rot="MR0"/>
+<element name="L23" library="SmartPrj" package="R0603-ROUND" value="6.8nH Murata LQG18HN6N8J00D" x="57.55" y="7.255" smashed="yes" rot="MR90"/>
 <element name="R1" library="rcl" package="R1206" value="22" x="86.36" y="43.561" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="87.376" y="45.974" size="1.016" layer="28" rot="MR0"/>
 </element>
@@ -2830,21 +2824,21 @@ design rules under a new name.</description>
 <element name="U$2" library="cellphone" package="NOKIA_5100_SPARKFUN" value="NOKIA_5100" x="92.71" y="29.21" rot="R270"/>
 <element name="SDOWN" library="cellphone" package="BUTTON_6MM_JLEAD" value="" x="57.15" y="29.21" rot="R270"/>
 <element name="SUP" library="cellphone" package="BUTTON_6MM_JLEAD" value="" x="64.77" y="29.21" rot="R270"/>
-<element name="U$3" library="cellphone" package="PUI-SMT-0540" value="BUZZER-MAGNETIC-3V" x="120.65" y="15.875" smashed="yes" rot="R180"/>
+<element name="U$3" library="cellphone" package="PUI-SMT-0540" value="BUZZER-MAGNETIC-3V" x="120.65" y="15.875" rot="R180"/>
 <element name="T1" library="transistor" package="SOT23-BEC" value="" x="118.491" y="8.509" smashed="yes" rot="R90">
-<attribute name="NAME" x="122.301" y="7.874" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="117.856" y="5.334" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="121.666" y="6.604" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R6" library="rcl" package="R1206" value="4.7K" x="122.809" y="8.382" smashed="yes" rot="R270">
-<attribute name="VALUE" x="120.269" y="10.287" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="124.079" y="10.287" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D1" library="diode" package="SOD123" value="" x="120.65" y="18.415" smashed="yes" rot="R180">
-<attribute name="NAME" x="121.75" y="21.225" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="126.195" y="19.32" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="121.75" y="20.715" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="JP3" library="SparkFun-Connectors" package="JST-2-SMD" value="" x="70.993" y="49.022" rot="MR270"/>
 <element name="U1" library="SparkFun" package="SOT23-5" value="MCP73831" x="38.735" y="52.07" smashed="yes" rot="R90">
-<attribute name="VALUE" x="41.5925" y="54.1655" size="0.8128" layer="27" rot="R180"/>
+<attribute name="VALUE" x="37.5285" y="53.7845" size="0.8128" layer="27"/>
 </element>
 <element name="R7" library="rcl" package="R1206" value="2K" x="36.322" y="49.149" smashed="yes" rot="R180">
 <attribute name="VALUE" x="36.957" y="51.054" size="0.8128" layer="27" rot="R180"/>
@@ -2856,7 +2850,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="45.72" y="53.213" size="0.8128" layer="27" rot="R270"/>
 </element>
 <element name="U$1" library="SparkFun-Connectors" package="USB-MINIB" value="USB-MINIB-5PIN" x="19.812" y="52.832" smashed="yes" rot="R270">
-<attribute name="VALUE" x="19.812" y="56.642" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="12.827" y="57.277" size="0.8128" layer="27" rot="R270"/>
 </element>
 <element name="JP4" library="pinhead" package="1X06/90" value="" x="124.46" y="41.275" smashed="yes" rot="R270">
 <attribute name="VALUE" x="120.65" y="31.75" size="1.27" layer="27"/>
@@ -2886,7 +2880,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="86.2" y="52.305" size="1.016" layer="28" rot="MR0"/>
 </element>
 <element name="C13" library="rcl" package="C1206" value="0.1uF" x="57.277" y="15.113" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="56.261" y="17.272" size="1.016" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="57.531" y="22.352" size="1.016" layer="28" rot="MR270"/>
 </element>
 <element name="C12" library="rcl" package="C1206" value="0.1uF" x="92.964" y="46.355" smashed="yes" rot="MR90">
 <attribute name="NAME" x="94.234" y="45.085" size="1.27" layer="26" rot="MR90"/>
@@ -2907,7 +2901,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="112.903" y="41.021" size="1.016" layer="26" rot="MR0"/>
 </element>
 <element name="C14" library="rcl" package="C1206" value="18pF" x="116.459" y="44.45" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="119.126" y="43.434" size="1.016" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="118.872" y="42.926" size="1.016" layer="28" rot="MR90"/>
 </element>
 <element name="C15" library="rcl" package="C1206" value="18pF" x="116.459" y="47.117" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="114.808" y="49.403" size="1.016" layer="28" rot="MR180"/>
@@ -2922,7 +2916,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="48.547" y="19.958" size="1.016" layer="28" rot="MR180"/>
 </element>
 <element name="U$5" library="cellphone" package="SPEAKER-6.4MM" value="MINI-SIREN" x="120.65" y="29.21" rot="R270"/>
-<element name="U$6" library="cellphone" package="B3U-1000P" value="BUTTON-2" x="120.65" y="21.59"/>
+<element name="RESET" library="cellphone" package="B3U-1000P" value="BUTTON" x="120.65" y="21.59" smashed="yes">
+<attribute name="NAME" x="119.38" y="23.495" size="1.27" layer="25"/>
+</element>
 <element name="R9" library="rcl" package="R1206" value="470" x="40.132" y="47.879" smashed="yes" rot="R270">
 <attribute name="VALUE" x="41.402" y="48.514" size="0.8128" layer="27" rot="R270"/>
 </element>
@@ -2937,7 +2933,10 @@ design rules under a new name.</description>
 <element name="R10" library="rcl" package="R1206" value="470" x="76.708" y="5.715" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="75.438" y="3.175" size="0.8128" layer="28" rot="MR180"/>
 </element>
-<element name="JP1" library="pinhead" package="1X05" value="" x="105.664" y="55.499"/>
+<element name="JP1" library="pinhead" package="1X05" value="" x="105.664" y="55.499" smashed="yes">
+<attribute name="NAME" x="114.1222" y="53.5178" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="99.314" y="52.324" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC" class="1">
@@ -3176,7 +3175,7 @@ design rules under a new name.</description>
 <via x="104.14" y="45.085" extent="1-16" drill="0.6"/>
 <via x="94.361" y="41.783" extent="1-16" drill="0.6"/>
 <via x="84.455" y="33.655" extent="1-16" drill="0.6"/>
-<contactref element="U$6" pad="P$1"/>
+<contactref element="RESET" pad="P$1"/>
 <polygon width="0.254" layer="1" thermals="no">
 <vertex x="36.068" y="51.943"/>
 <vertex x="41.529" y="51.943"/>
@@ -3538,7 +3537,7 @@ design rules under a new name.</description>
 <wire x1="108.55" y1="48.606" x2="110.109" y2="50.165" width="0.254" layer="16"/>
 <wire x1="110.109" y1="50.165" x2="122.806" y2="50.165" width="0.254" layer="16"/>
 <wire x1="122.806" y1="50.165" x2="124.949" y2="52.308" width="0.254" layer="16"/>
-<contactref element="U$6" pad="P$2"/>
+<contactref element="RESET" pad="P$2"/>
 <wire x1="122.35" y1="21.59" x2="124.46" y2="21.59" width="0.254" layer="1"/>
 <via x="124.46" y="21.59" extent="1-16" drill="0.6"/>
 <wire x1="124.46" y1="21.59" x2="125.73" y2="22.86" width="0.254" layer="16"/>

@@ -25979,7 +25979,7 @@ Source: www.kingbright.com</description>
 <part name="SJ2" library="jumper" deviceset="SJ2W" device=""/>
 <part name="C16" library="rcl" deviceset="CPOL-US" device="D/7343-31R" value="1000uF"/>
 <part name="U$5" library="cellphone" deviceset="MINI-SIREN" device=""/>
-<part name="U$6" library="cellphone" deviceset="BUTTON-2" device=""/>
+<part name="RESET" library="cellphone" deviceset="BUTTON-2" device="" value="BUTTON"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="470"/>
 <part name="LED1" library="led" deviceset="LED" device="SMT1206"/>
 <part name="LED2" library="led" deviceset="LED" device="SMT1206"/>
@@ -26091,7 +26091,7 @@ Source: www.kingbright.com</description>
 <instance part="SJ2" gate="G$1" x="43.18" y="-7.62" rot="R90"/>
 <instance part="C16" gate="G$1" x="302.26" y="213.36"/>
 <instance part="U$5" gate="G$1" x="149.86" y="233.68" rot="R270"/>
-<instance part="U$6" gate="G$1" x="-66.04" y="109.22"/>
+<instance part="RESET" gate="G$1" x="-66.04" y="109.22"/>
 <instance part="R9" gate="G$1" x="292.1" y="254" rot="R90"/>
 <instance part="LED1" gate="G$1" x="292.1" y="266.7"/>
 <instance part="LED2" gate="G$1" x="162.56" y="175.26" rot="R90"/>
@@ -26386,7 +26386,7 @@ Source: www.kingbright.com</description>
 <wire x1="-76.2" y1="109.22" x2="-76.2" y2="93.98" width="0.1524" layer="91"/>
 <label x="-78.74" y="91.44" size="1.778" layer="95"/>
 <wire x1="-76.2" y1="109.22" x2="-71.12" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="P"/>
+<pinref part="RESET" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -26849,7 +26849,7 @@ Source: www.kingbright.com</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="109.22" x2="-60.96" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-55.88" y="109.22"/>
-<pinref part="U$6" gate="G$1" pin="S"/>
+<pinref part="RESET" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
