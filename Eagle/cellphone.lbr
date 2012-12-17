@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -781,6 +781,7 @@
 <wire x1="2.5" y1="-0.75" x2="2.5" y2="4.25" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-0.75" x2="2.5" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="4.25" x2="2.5" y2="4.25" width="0.127" layer="21"/>
+<circle x="0" y="2.7" radius="0.6" width="0.127" layer="21"/>
 </package>
 <package name="500A-M6">
 <description>500A M6 Packages from E-Switch (e.g. 500ASSP1M6QE)</description>

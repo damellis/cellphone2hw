@@ -19822,6 +19822,7 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <wire x1="2.5" y1="-0.75" x2="2.5" y2="4.25" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-0.75" x2="2.5" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="4.25" x2="2.5" y2="4.25" width="0.127" layer="21"/>
+<circle x="0" y="2.7" radius="0.6" width="0.127" layer="21"/>
 </package>
 <package name="EP-A">
 <description>Panasonic EP Electric Double Layer Capacitors (Gold Capacitors), Terminal A</description>
@@ -27401,13 +27402,6 @@ Source: www.kingbright.com</description>
 <pinref part="S9" gate="1" pin="P1"/>
 <pinref part="S#" gate="1" pin="P"/>
 <wire x1="15.24" y1="175.26" x2="15.24" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="(TCK/PCINT18)PC2"/>
-<wire x1="5.08" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
-<label x="12.7" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
