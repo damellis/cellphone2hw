@@ -141,6 +141,8 @@
 <text x="6.35" y="54.61" size="1.778" layer="1">TOP</text>
 <text x="129.54" y="48.26" size="1.778" layer="25" rot="R90">B</text>
 <text x="129.54" y="33.02" size="1.778" layer="25" rot="R90">G</text>
+<rectangle x1="21.209" y1="49.022" x2="22.479" y2="50.927" layer="29"/>
+<rectangle x1="17.145" y1="49.022" x2="18.415" y2="50.927" layer="29"/>
 </plain>
 <libraries>
 <library name="GSM">
