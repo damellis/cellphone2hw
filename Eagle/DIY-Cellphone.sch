@@ -25970,7 +25970,7 @@ Source: www.kingbright.com</description>
 <part name="C12" library="rcl" deviceset="C-EU" device="C1206" value="0.1uF"/>
 <part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="4.7K"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="R1206"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R1206" value="100"/>
 <part name="U$4" library="cellphone" deviceset="SUPERCAP" device="PAS"/>
 <part name="8MHZ" library="fab" deviceset="CRYSTAL" device=""/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C1206" value="18pF"/>

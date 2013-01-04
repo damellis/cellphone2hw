@@ -2893,8 +2893,8 @@ design rules under a new name.</description>
 <element name="R5" library="rcl" package="R1206" value="4.7K" x="113.03" y="12.7" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="111.76" y="10.795" size="1.016" layer="28" rot="MR180"/>
 </element>
-<element name="R8" library="rcl" package="R1206" value="" x="115.57" y="20.955" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="113.03" y="19.685" size="1.27" layer="28" rot="MR90"/>
+<element name="R8" library="rcl" package="R1206" value="100" x="115.57" y="20.955" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="116.84" y="19.685" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="U$4" library="cellphone" package="414-VA5R" value="SUPERCAPPAS" x="93.345" y="38.1" rot="MR180"/>
 <element name="8MHZ" library="fab" package="2-SMD-5X3MM" value="CRYSTAL" x="112.141" y="45.847" smashed="yes" rot="MR90">
