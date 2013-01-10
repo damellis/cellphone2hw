@@ -18,7 +18,7 @@
    sodipodi:docname="DIY-Cellphone-Bottom.svg"><metadata
      id="metadata38919"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs38917"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath38937"><path
@@ -76,7 +76,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Circuit"
      transform="matrix(1.25,0,0,-1.25,0,743.75)"
-     style="display:none"><g
+     style="display:inline"><g
        id="g38927"
        transform="matrix(0.06,0,0,-0.06,0,595)" /><g
        id="g38931"
