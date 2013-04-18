@@ -125,13 +125,13 @@
 <wire x1="0" y1="56.515" x2="1.905" y2="58.42" width="0" layer="20" curve="-90"/>
 <wire x1="1.905" y1="58.42" x2="128.905" y2="58.42" width="0" layer="20"/>
 <wire x1="128.905" y1="58.42" x2="130.81" y2="56.515" width="0" layer="20" curve="-90"/>
-<hole x="2.54" y="55.88" drill="2.8"/>
-<hole x="2.54" y="2.54" drill="2.8"/>
-<hole x="128.27" y="2.54" drill="2.8"/>
-<hole x="128.27" y="55.88" drill="2.8"/>
-<hole x="65.405" y="55.88" drill="2.8"/>
-<hole x="65.405" y="2.54" drill="2.8"/>
-<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone (MM/DD/YYYY)</text>
+<hole x="3.302" y="55.118" drill="1.6"/>
+<hole x="3.302" y="3.302" drill="1.6"/>
+<hole x="127.508" y="3.302" drill="1.6"/>
+<hole x="127.508" y="55.118" drill="1.6"/>
+<hole x="65.405" y="55.118" drill="1.6"/>
+<hole x="65.405" y="3.302" drill="1.6"/>
+<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone (4/18/2013)</text>
 <text x="4.445" y="8.255" size="1.4224" layer="25" font="fixed">David A. Mellis, mellis@media.mit.edu</text>
 <text x="4.445" y="5.715" size="1.4224" layer="25" font="fixed">High-Low Tech, MIT Media Lab</text>
 <text x="116.205" y="43.18" size="1.016" layer="26" font="fixed" rot="MR270">uC</text>
