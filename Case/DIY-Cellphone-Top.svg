@@ -92,7 +92,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1280"
-     inkscape:window-height="752"
+     inkscape:window-height="980"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.7077635"
@@ -101,7 +101,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" /><g
+     inkscape:current-layer="layer1" /><g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Circuit (LED Matrix)"
@@ -18114,7 +18114,7 @@
        id="rect16104"
        inkscape:connector-curvature="0" /><path
        inkscape:connector-curvature="0"
-       d="m 523.56,269.525 c 0,1.56573 -1.26927,2.835 -2.835,2.835 -1.56573,0 -2.835,-1.26927 -2.835,-2.835 0,-1.56573 1.26927,-2.835 2.835,-2.835 1.56573,0 2.835,1.26927 2.835,2.835 z"
+       d="m 523.56,268.525 c 0,1.56573 -1.26927,2.835 -2.835,2.835 -1.56573,0 -2.835,-1.26927 -2.835,-2.835 0,-1.56573 1.26927,-2.835 2.835,-2.835 1.56573,0 2.835,1.26927 2.835,2.835 z"
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4.1500001;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="path11342" /><path
        inkscape:connector-curvature="0"
@@ -18126,7 +18126,7 @@
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4.1500001;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="path11346" /><path
        inkscape:connector-curvature="0"
-       d="m 523.56,454.375 c 0,1.56573 -1.26927,2.835 -2.835,2.835 -1.56573,0 -2.835,-1.26927 -2.835,-2.835 0,-1.56573 1.26927,-2.835 2.835,-2.835 1.56573,0 2.835,1.26927 2.835,2.835 z"
+       d="m 523.56,455.375 c 0,1.56573 -1.26927,2.835 -2.835,2.835 -1.56573,0 -2.835,-1.26927 -2.835,-2.835 0,-1.56573 1.26927,-2.835 2.835,-2.835 1.56573,0 2.835,1.26927 2.835,2.835 z"
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4.1500001;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="path11348" /><path
        inkscape:connector-curvature="0"
