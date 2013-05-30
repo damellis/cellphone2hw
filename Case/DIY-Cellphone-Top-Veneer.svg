@@ -255,7 +255,7 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="3.082391"
-     inkscape:cx="521.175"
+     inkscape:cx="520.85058"
      inkscape:cy="381.5"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -18053,11 +18053,7 @@
        inkscape:connector-curvature="0"
        style="opacity:0.76293137;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-miterlimit:4.25;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m 309.66006,362.27514 c 0,1.57875 -1.27984,2.85859 -2.85859,2.85859 -1.57875,0 -2.85859,-1.27984 -2.85859,-2.85859 0,-1.57875 1.27984,-2.85859 2.85859,-2.85859 1.57875,0 2.85859,1.27984 2.85859,2.85859 z"
-       id="path31429" /><path
-       style="opacity:0.76293137;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 555.94696,289.79602 124.41731,0 0,145.15353 -124.41731,0 z"
-       id="rect6620"
-       inkscape:connector-curvature="0" /><g
+       id="path31429" /><g
        style="display:none"
        transform="matrix(1.25,0,0,-1.25,-27.074466,663.90578)"
        inkscape:label="Circuit"
