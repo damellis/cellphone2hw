@@ -6945,8 +6945,8 @@ Digi-Key #423-1142-ND</description>
 </package>
 <package name="B3U-1000P">
 <description>Omron B3U-1000P (Digi-Key #SW1020CT-ND)</description>
-<smd name="P$1" x="-1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
-<smd name="P$2" x="1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.9" y="0" dx="1.7" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$2" x="1.9" y="0" dx="1.7" dy="1.2" layer="1" rot="R90"/>
 <wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
