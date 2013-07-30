@@ -1212,8 +1212,8 @@ Digi-Key #423-1142-ND</description>
 </package>
 <package name="B3U-1000P">
 <description>Omron B3U-1000P (Digi-Key #SW1020CT-ND)</description>
-<smd name="P$1" x="-1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
-<smd name="P$2" x="1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.9" y="0" dx="1.7" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$2" x="1.9" y="0" dx="1.7" dy="1.2" layer="1" rot="R90"/>
 <wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
@@ -2471,7 +2471,7 @@ design rules under a new name.</description>
 <wire x1="110.109" y1="50.165" x2="122.806" y2="50.165" width="0.254" layer="16"/>
 <wire x1="122.806" y1="50.165" x2="124.949" y2="52.308" width="0.254" layer="16"/>
 <contactref element="RESET" pad="P$2"/>
-<wire x1="122.35" y1="21.59" x2="124.46" y2="21.59" width="0.254" layer="1"/>
+<wire x1="122.55" y1="21.59" x2="124.46" y2="21.59" width="0.254" layer="1"/>
 <via x="124.46" y="21.59" extent="1-16" drill="0.6"/>
 <wire x1="124.46" y1="21.59" x2="125.73" y2="22.86" width="0.254" layer="16"/>
 <wire x1="125.73" y1="22.86" x2="125.73" y2="37.465" width="0.254" layer="16"/>
