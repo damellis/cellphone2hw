@@ -131,7 +131,7 @@
 <hole x="128.27" y="55.88" drill="2.8"/>
 <hole x="65.405" y="55.88" drill="2.8"/>
 <hole x="65.405" y="2.54" drill="2.8"/>
-<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone (07/30/2013)</text>
+<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone (07/31/2013)</text>
 <text x="4.445" y="8.255" size="1.4224" layer="25" font="fixed">David A. Mellis, mellis@media.mit.edu</text>
 <text x="4.445" y="5.715" size="1.4224" layer="25" font="fixed">High-Low Tech, MIT Media Lab</text>
 <text x="116.205" y="43.18" size="1.016" layer="26" font="fixed" rot="MR270">uC</text>
@@ -144,6 +144,7 @@
 <rectangle x1="17.145" y1="49.022" x2="18.415" y2="50.927" layer="29"/>
 <text x="123.825" y="3.175" size="1.016" layer="27" font="fixed" rot="R180">uC</text>
 <text x="121.539" y="3.175" size="1.016" layer="27" font="fixed" rot="R180">Cell</text>
+<text x="3.81" y="50.165" size="1.778" layer="1" font="fixed">TOP</text>
 </plain>
 <libraries>
 <library name="GSM">
