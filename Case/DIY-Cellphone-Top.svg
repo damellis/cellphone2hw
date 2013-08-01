@@ -11449,8 +11449,8 @@
        transform="matrix(1.25,0,0,-1.25,0,743.75)"
        inkscape:connector-curvature="0"
        id="path3756"
-       style="fill:none;stroke:#000000;stroke-width:0.80000000999999998;stroke-miterlimit:4.15000009999999975;stroke-opacity:1;stroke-dasharray:none;opacity:1"
-       d="m 602.28,382.54 0,-18.805 -33.6,0 0,-46.0725 8.69176,0 0,-1.6 24.90824,0 0,-88.2025"
+       style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-miterlimit:4.1500001;stroke-opacity:1;stroke-dasharray:none"
+       d="m 602.28,382.54 0,-16.996 -33.6,0 0,-47.8815 8.69176,0 5.18024,-3.3825 19.728,0 0,-86.42"
        sodipodi:nodetypes="cccccccc" /><path
        transform="matrix(1.25,0,0,-1.25,0,743.75)"
        inkscape:connector-curvature="0"
