@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -867,6 +867,18 @@ Digi-Key #423-1142-ND</description>
 <rectangle x1="-9.2964" y1="-2.286" x2="-6.7564" y2="2.286" layer="21"/>
 <rectangle x1="-3.937" y1="-2.286" x2="-1.397" y2="2.286" layer="21"/>
 </package>
+<package name="SPEAKER_23MM_PINS">
+<description>CUI Low-Profile Speaker (CLS0231MP-1)
+Digi-Key #102-1543-ND</description>
+<circle x="0" y="0" radius="11.5" width="0.127" layer="21"/>
+<pad name="P$1" x="11" y="5" drill="0.8"/>
+<pad name="P$2" x="11" y="-5" drill="0.8"/>
+<wire x1="9.75" y1="-6.1" x2="12.25" y2="-6.1" width="0.127" layer="21"/>
+<wire x1="12.25" y1="-6.1" x2="12.25" y2="6.1" width="0.127" layer="21"/>
+<wire x1="12.25" y1="6.1" x2="9.75" y2="6.1" width="0.127" layer="21"/>
+<wire x1="9.75" y1="6.1" x2="9.75" y2="-6.1" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="7.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TFT_160X128">
@@ -1434,6 +1446,22 @@ Digi-Key #423-1142-ND</description>
 <connect gate="G$1" pin="VCC" pad="22"/>
 <connect gate="G$1" pin="V_LED" pad="3"/>
 <connect gate="G$1" pin="V_LED2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPEAKER">
+<gates>
+<gate name="G$1" symbol="SPEAKER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPEAKER_23MM_PINS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
