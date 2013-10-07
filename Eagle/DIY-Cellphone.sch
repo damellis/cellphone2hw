@@ -21752,34 +21752,39 @@ Source: www.kingbright.com</description>
 <wire x1="172.72" y1="175.26" x2="167.64" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="PB0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(XCK0/T0/PCINT8)PB0"/>
 <wire x1="30.48" y1="86.36" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
+<label x="25.4" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="PB1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(CLKO/T1/PCINT9)PB1"/>
 <wire x1="30.48" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
+<label x="25.4" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="PB2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(INT2/AIN0/PCINT10)PB2"/>
 <wire x1="30.48" y1="81.28" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
+<label x="25.4" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="PB3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(OC0A/AIN1/PCINT11)PB3"/>
 <wire x1="30.48" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
+<label x="25.4" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="PB4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(OC0B/!SS!/PCINT12)PB4"/>
 <wire x1="30.48" y1="76.2" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
+<label x="25.4" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$43" class="0">
