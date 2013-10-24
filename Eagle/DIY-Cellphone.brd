@@ -8,19 +8,19 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="2" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="2" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="5" fill="6" visible="no" active="yes"/>
@@ -35,7 +35,7 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="14" fill="11" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -123,7 +123,7 @@
 <wire x1="0" y1="0" x2="0" y2="44.45" width="0" layer="20"/>
 <text x="1.905" y="1.905" size="1.778" layer="25" font="fixed">Cellphone Module
 David A. Mellis
-Oct. 10, 2013</text>
+MMM. DD, YYYY</text>
 <text x="71.12" y="43.18" size="0.8128" layer="25" font="fixed">24</text>
 <text x="68.58" y="43.18" size="0.8128" layer="25" font="fixed">25</text>
 <text x="66.04" y="43.18" size="0.8128" layer="25" font="fixed">26</text>
@@ -156,6 +156,7 @@ Oct. 10, 2013</text>
 <text x="59.69" y="43.18" size="0.8128" layer="26" font="fixed" rot="MR0">29</text>
 <text x="57.15" y="43.18" size="0.8128" layer="26" font="fixed" rot="MR0">30</text>
 <text x="54.61" y="43.18" size="0.8128" layer="26" font="fixed" rot="MR0">31</text>
+<rectangle x1="34.671" y1="12.954" x2="40.259" y2="18.923" layer="42"/>
 </plain>
 <libraries>
 <library name="GSM">
@@ -1958,13 +1959,13 @@ design rules under a new name.</description>
 <wire x1="3.175" y1="41.402" x2="3.175" y2="39.227" width="1.016" layer="1"/>
 <wire x1="10.668" y1="39.227" x2="16.764" y2="39.227" width="1.016" layer="1"/>
 <wire x1="16.764" y1="39.227" x2="16.764" y2="40.132" width="1.016" layer="1"/>
-<polygon width="0.254" layer="16" isolate="0.254" thermals="no">
+<polygon width="0.254" layer="16" isolate="0.4064">
 <vertex x="77.343" y="44.323"/>
 <vertex x="33.02" y="44.323"/>
 <vertex x="33.02" y="0.127"/>
 <vertex x="77.343" y="0.127"/>
 </polygon>
-<polygon width="0.254" layer="1" isolate="0.254" thermals="no">
+<polygon width="0.254" layer="1" isolate="0.4064">
 <vertex x="77.343" y="44.323"/>
 <vertex x="33.02" y="44.323"/>
 <vertex x="33.02" y="0.127"/>
@@ -1999,6 +2000,7 @@ design rules under a new name.</description>
 <wire x1="42.672" y1="31.115" x2="42.672" y2="22.225" width="0.254" layer="1"/>
 <wire x1="42.672" y1="22.225" x2="43.304" y2="22.225" width="0.254" layer="1"/>
 <via x="43.561" y="26.67" extent="1-16" drill="0.6"/>
+<via x="68.072" y="5.461" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="DISP_DATA">
 <contactref element="U7" pad="P$1"/>
@@ -2091,9 +2093,9 @@ design rules under a new name.</description>
 <wire x1="59.988" y1="22.156" x2="60.706" y2="22.156" width="0.254" layer="1"/>
 <wire x1="60.706" y1="22.156" x2="60.706" y2="20.701" width="0.254" layer="1"/>
 <via x="60.706" y="20.701" extent="1-16" drill="0.6"/>
-<wire x1="60.706" y1="20.701" x2="68.072" y2="20.701" width="0.254" layer="16"/>
-<wire x1="68.072" y1="20.701" x2="68.072" y2="31.242" width="0.254" layer="16"/>
-<wire x1="68.072" y1="31.242" x2="70.25" y2="31.242" width="0.254" layer="16"/>
+<wire x1="60.706" y1="20.701" x2="67.437" y2="20.701" width="0.254" layer="16"/>
+<wire x1="67.437" y1="20.701" x2="67.437" y2="31.242" width="0.254" layer="16"/>
+<wire x1="67.437" y1="31.242" x2="70.25" y2="31.242" width="0.254" layer="16"/>
 <wire x1="70.25" y1="31.242" x2="70.25" y2="31.319" width="0.254" layer="16"/>
 </signal>
 <signal name="SPK2P">
