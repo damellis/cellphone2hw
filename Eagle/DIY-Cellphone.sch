@@ -20813,6 +20813,10 @@ Source: www.kingbright.com</description>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP8" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP9" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="LED3" library="cellphone-led" deviceset="LED" device="SMT1206" value="PWR"/>
+<part name="R1" library="cellphone-rcl" deviceset="R-US_" device="R1206" value="470"/>
+<part name="LED4" library="cellphone-led" deviceset="LED" device="SMT1206" value="13"/>
+<part name="R5" library="cellphone-rcl" deviceset="R-US_" device="R1206" value="470"/>
 </parts>
 <sheets>
 <sheet>
@@ -20899,6 +20903,10 @@ Source: www.kingbright.com</description>
 <instance part="JP6" gate="A" x="50.8" y="71.12"/>
 <instance part="JP8" gate="G$1" x="50.8" y="137.16"/>
 <instance part="JP9" gate="G$1" x="50.8" y="124.46"/>
+<instance part="LED3" gate="G$1" x="266.7" y="213.36"/>
+<instance part="R1" gate="G$1" x="266.7" y="203.2" rot="R90"/>
+<instance part="LED4" gate="G$1" x="58.42" y="17.78"/>
+<instance part="R5" gate="G$1" x="58.42" y="5.08" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20959,6 +20967,9 @@ Source: www.kingbright.com</description>
 <junction x="325.12" y="215.9"/>
 <pinref part="C16" gate="G$1" pin="+"/>
 <junction x="302.26" y="215.9"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="289.56" y1="215.9" x2="266.7" y2="215.9" width="0.1524" layer="91"/>
+<junction x="289.56" y="215.9"/>
 </segment>
 <segment>
 <wire x1="340.36" y1="264.16" x2="340.36" y2="269.24" width="0.1524" layer="91"/>
@@ -21112,6 +21123,11 @@ Source: www.kingbright.com</description>
 <pinref part="C16" gate="G$1" pin="-"/>
 <wire x1="302.26" y1="208.28" x2="289.56" y2="208.28" width="0.1524" layer="91"/>
 <junction x="302.26" y="208.28"/>
+<wire x1="289.56" y1="208.28" x2="274.32" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="208.28" x2="274.32" y2="198.12" width="0.1524" layer="91"/>
+<junction x="289.56" y="208.28"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="198.12" x2="266.7" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -21170,6 +21186,11 @@ Source: www.kingbright.com</description>
 <pinref part="JP9" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 <label x="30.48" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="0" x2="58.42" y2="-5.08" width="0.1524" layer="91"/>
+<label x="55.88" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DISP_DATA" class="0">
@@ -21794,6 +21815,10 @@ Source: www.kingbright.com</description>
 <wire x1="5.08" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <label x="12.7" y="27.94" size="1.778" layer="95"/>
 <pinref part="JP5" gate="A" pin="2"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="48.26" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="27.94" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<junction x="48.26" y="27.94"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -21953,6 +21978,19 @@ Source: www.kingbright.com</description>
 <wire x1="5.08" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <label x="12.7" y="58.42" size="1.778" layer="95"/>
 <pinref part="JP4" gate="A" pin="3"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="12.7" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

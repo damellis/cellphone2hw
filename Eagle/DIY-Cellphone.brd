@@ -1827,6 +1827,18 @@ design rules under a new name.</description>
 <element name="JP9" library="pinhead" package="1X02" value="" x="83.185" y="41.275" smashed="yes">
 <attribute name="VALUE" x="80.645" y="38.1" size="1.27" layer="27"/>
 </element>
+<element name="LED3" library="cellphone-led" package="1206" value="PWR" x="83.82" y="23.495" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="85.725" y="23.495" size="0.8128" layer="28" rot="MR270"/>
+</element>
+<element name="R1" library="cellphone-rcl" package="R1206" value="470" x="80.01" y="23.495" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="78.74" y="23.495" size="0.8128" layer="28" rot="MR270"/>
+</element>
+<element name="LED4" library="cellphone-led" package="1206" value="13" x="83.82" y="15.24" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="85.725" y="15.24" size="0.8128" layer="28" rot="MR270"/>
+</element>
+<element name="R5" library="cellphone-rcl" package="R1206" value="470" x="80.01" y="15.24" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="78.74" y="15.24" size="0.8128" layer="28" rot="MR270"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC" class="1">
@@ -1910,9 +1922,11 @@ design rules under a new name.</description>
 <contactref element="JP8" pad="1"/>
 <contactref element="JP9" pad="1"/>
 <wire x1="61.788" y1="27.156" x2="81.915" y2="27.156" width="0.254" layer="1"/>
-<wire x1="81.915" y1="27.156" x2="81.915" y2="27.305" width="0.254" layer="1"/>
-<wire x1="81.915" y1="27.305" x2="81.915" y2="41.275" width="0.254" layer="1"/>
+<wire x1="81.915" y1="27.156" x2="81.915" y2="41.275" width="0.254" layer="1"/>
 <wire x1="81.915" y1="3.175" x2="81.915" y2="27.156" width="0.254" layer="1"/>
+<contactref element="LED3" pad="A"/>
+<wire x1="83.82" y1="24.917" x2="81.915" y2="24.917" width="0.254" layer="16"/>
+<wire x1="81.915" y1="24.917" x2="81.915" y2="41.275" width="0.254" layer="16"/>
 </signal>
 <signal name="ANT" class="4">
 <contactref element="U7" pad="P$43"/>
@@ -2075,7 +2089,9 @@ design rules under a new name.</description>
 <via x="43.561" y="26.67" extent="1-16" drill="0.6"/>
 <contactref element="JP8" pad="2"/>
 <contactref element="JP9" pad="2"/>
-<via x="78.105" y="24.13" extent="1-16" drill="0.6"/>
+<via x="78.105" y="19.685" extent="1-16" drill="0.6"/>
+<contactref element="R1" pad="1"/>
+<contactref element="R5" pad="1"/>
 </signal>
 <signal name="DISP_DATA">
 <contactref element="U7" pad="P$1"/>
@@ -2611,6 +2627,10 @@ design rules under a new name.</description>
 <wire x1="53.588" y1="22.156" x2="53.588" y2="16.262" width="0.254" layer="1"/>
 <wire x1="53.588" y1="16.262" x2="56.515" y2="13.335" width="0.254" layer="1"/>
 <wire x1="56.515" y1="13.335" x2="56.515" y2="3.175" width="0.254" layer="1"/>
+<contactref element="LED4" pad="A"/>
+<wire x1="83.82" y1="13.818" x2="83.82" y2="5.715" width="0.254" layer="16"/>
+<wire x1="83.82" y1="5.715" x2="56.515" y2="5.715" width="0.254" layer="16"/>
+<wire x1="56.515" y1="5.715" x2="56.515" y2="3.175" width="0.254" layer="16"/>
 </signal>
 <signal name="PD6">
 <contactref element="IC1" pad="15"/>
@@ -2741,6 +2761,16 @@ design rules under a new name.</description>
 <wire x1="62.738" y1="23.241" x2="62.738" y2="13.462" width="0.254" layer="1"/>
 <wire x1="62.738" y1="13.462" x2="69.215" y2="6.985" width="0.254" layer="1"/>
 <wire x1="69.215" y1="6.985" x2="69.215" y2="3.175" width="0.254" layer="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="LED3" pad="C"/>
+<contactref element="R1" pad="2"/>
+<wire x1="83.82" y1="22.073" x2="80.01" y2="22.073" width="0.254" layer="16"/>
+</signal>
+<signal name="N$3">
+<contactref element="LED4" pad="C"/>
+<contactref element="R5" pad="2"/>
+<wire x1="83.82" y1="16.662" x2="80.01" y2="16.662" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>
