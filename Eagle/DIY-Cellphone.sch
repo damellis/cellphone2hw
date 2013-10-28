@@ -20811,6 +20811,8 @@ Source: www.kingbright.com</description>
 <part name="JP7" library="cellphone" deviceset="ARDUINO_SERIAL_PROGRAM" device="SMD-NOHOLES"/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP8" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP9" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20895,6 +20897,8 @@ Source: www.kingbright.com</description>
 <instance part="JP7" gate="G$1" x="-35.56" y="-10.16"/>
 <instance part="JP4" gate="A" x="50.8" y="60.96"/>
 <instance part="JP6" gate="A" x="50.8" y="71.12"/>
+<instance part="JP8" gate="G$1" x="50.8" y="137.16"/>
+<instance part="JP9" gate="G$1" x="50.8" y="124.46"/>
 </instances>
 <busses>
 </busses>
@@ -20964,6 +20968,16 @@ Source: www.kingbright.com</description>
 <label x="327.66" y="269.24" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="VBAT"/>
 <pinref part="C4" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="139.7" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
+<label x="30.48" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
+<label x="30.48" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ANT" class="4">
@@ -21146,6 +21160,16 @@ Source: www.kingbright.com</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="175.26" x2="193.04" y2="175.26" width="0.1524" layer="91"/>
 <label x="195.58" y="172.72" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
+<label x="30.48" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
+<label x="30.48" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DISP_DATA" class="0">
