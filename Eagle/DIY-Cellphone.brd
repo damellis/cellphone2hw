@@ -1783,7 +1783,7 @@ design rules under a new name.</description>
 <element name="C16" library="cellphone-rcl" package="D/7343-31R" value="1000uF" x="35.814" y="17.018" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="32.493" y="14.003" size="0.8128" layer="28" rot="MR90"/>
 </element>
-<element name="SPEAKER" library="cellphone" package="SPEAKER-6.4MM" value="MINI-SIREN" x="74.295" y="35.56" smashed="yes" rot="R270"/>
+<element name="SPEAKER" library="cellphone" package="SPEAKER-6.4MM" value="MINI-SIREN" x="83.185" y="36.195" smashed="yes"/>
 <element name="RST" library="cellphone" package="B3U-1000P" value="BUTTON" x="36.322" y="28.194" smashed="yes" rot="MR180">
 <attribute name="NAME" x="34.036" y="29.21" size="0.8128" layer="26" rot="MR270"/>
 </element>
@@ -1801,9 +1801,9 @@ design rules under a new name.</description>
 <element name="R10" library="cellphone-rcl" package="R1206" value="470" x="36.322" y="25.654" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="39.497" y="26.543" size="0.8128" layer="28" rot="MR270"/>
 </element>
-<element name="MIC" library="pinhead" package="1X02" value="" x="74.295" y="29.845" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.9112" y="28.4988" size="0.8128" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="77.47" y="27.305" size="1.27" layer="27" rot="R90"/>
+<element name="MIC" library="pinhead" package="1X02" value="" x="83.185" y="31.115" smashed="yes">
+<attribute name="NAME" x="81.8388" y="28.4988" size="0.8128" layer="25" ratio="10"/>
+<attribute name="VALUE" x="80.645" y="27.94" size="1.27" layer="27"/>
 </element>
 <element name="JP2" library="pinhead" package="1X08" value="" x="70.485" y="41.275" smashed="yes">
 <attribute name="VALUE" x="60.325" y="38.1" size="1.27" layer="27"/>
@@ -1922,11 +1922,15 @@ design rules under a new name.</description>
 <contactref element="JP8" pad="1"/>
 <contactref element="JP9" pad="1"/>
 <wire x1="61.788" y1="27.156" x2="81.915" y2="27.156" width="0.254" layer="1"/>
-<wire x1="81.915" y1="27.156" x2="81.915" y2="41.275" width="0.254" layer="1"/>
 <wire x1="81.915" y1="3.175" x2="81.915" y2="27.156" width="0.254" layer="1"/>
 <contactref element="LED3" pad="A"/>
-<wire x1="83.82" y1="24.917" x2="81.915" y2="24.917" width="0.254" layer="16"/>
-<wire x1="81.915" y1="24.917" x2="81.915" y2="41.275" width="0.254" layer="16"/>
+<wire x1="81.915" y1="41.275" x2="85.725" y2="37.465" width="0.254" layer="16"/>
+<wire x1="85.725" y1="37.465" x2="85.725" y2="26.67" width="0.254" layer="16"/>
+<wire x1="85.725" y1="26.67" x2="83.972" y2="24.917" width="0.254" layer="16"/>
+<wire x1="83.972" y1="24.917" x2="83.82" y2="24.917" width="0.254" layer="16"/>
+<wire x1="81.915" y1="27.156" x2="85.725" y2="27.156" width="0.254" layer="1"/>
+<wire x1="85.725" y1="27.156" x2="85.725" y2="37.465" width="0.254" layer="1"/>
+<wire x1="85.725" y1="37.465" x2="81.915" y2="41.275" width="0.254" layer="1"/>
 </signal>
 <signal name="ANT" class="4">
 <contactref element="U7" pad="P$43"/>
@@ -2089,7 +2093,7 @@ design rules under a new name.</description>
 <via x="43.561" y="26.67" extent="1-16" drill="0.6"/>
 <contactref element="JP8" pad="2"/>
 <contactref element="JP9" pad="2"/>
-<via x="78.105" y="19.685" extent="1-16" drill="0.6"/>
+<via x="77.47" y="24.13" extent="1-16" drill="0.6"/>
 <contactref element="R1" pad="1"/>
 <contactref element="R5" pad="1"/>
 </signal>
@@ -2196,25 +2200,22 @@ design rules under a new name.</description>
 <contactref element="U7" pad="P$21"/>
 <contactref element="SPEAKER" pad="P$1"/>
 <wire x1="70.25" y1="27.419" x2="71.234" y2="27.419" width="0.254" layer="16"/>
-<wire x1="71.234" y1="27.419" x2="71.882" y2="28.067" width="0.254" layer="16"/>
-<wire x1="71.882" y1="28.067" x2="71.882" y2="34.417" width="0.254" layer="16"/>
-<wire x1="71.882" y1="34.417" x2="74.295" y2="36.83" width="0.254" layer="16"/>
+<wire x1="71.234" y1="27.419" x2="80.01" y2="36.195" width="0.254" layer="16"/>
+<wire x1="80.01" y1="36.195" x2="81.915" y2="36.195" width="0.254" layer="16"/>
 </signal>
 <signal name="SPK1P">
 <contactref element="U7" pad="P$22"/>
 <contactref element="SPEAKER" pad="P$2"/>
-<wire x1="70.25" y1="26.119" x2="71.839" y2="26.119" width="0.254" layer="16"/>
-<wire x1="71.839" y1="26.119" x2="72.517" y2="26.797" width="0.254" layer="16"/>
-<wire x1="72.517" y1="26.797" x2="72.517" y2="32.512" width="0.254" layer="16"/>
-<wire x1="72.517" y1="32.512" x2="74.295" y2="34.29" width="0.254" layer="16"/>
+<wire x1="70.25" y1="26.119" x2="74.379" y2="26.119" width="0.254" layer="16"/>
+<wire x1="74.379" y1="26.119" x2="84.455" y2="36.195" width="0.254" layer="16"/>
 </signal>
 <signal name="MIC1N">
 <contactref element="U7" pad="P$24"/>
 <contactref element="MIC" pad="2"/>
-<wire x1="70.25" y1="23.519" x2="71.779" y2="23.519" width="0.254" layer="16"/>
-<wire x1="71.779" y1="23.519" x2="76.2" y2="27.94" width="0.254" layer="16"/>
-<wire x1="76.2" y1="27.94" x2="76.2" y2="29.21" width="0.254" layer="16"/>
-<wire x1="76.2" y1="29.21" x2="74.295" y2="31.115" width="0.254" layer="16"/>
+<wire x1="70.25" y1="23.519" x2="74.954" y2="23.519" width="0.254" layer="16"/>
+<wire x1="74.954" y1="23.519" x2="80.01" y2="28.575" width="0.254" layer="16"/>
+<wire x1="80.01" y1="28.575" x2="81.915" y2="28.575" width="0.254" layer="16"/>
+<wire x1="81.915" y1="28.575" x2="84.455" y2="31.115" width="0.254" layer="16"/>
 </signal>
 <signal name="MIC2P">
 <contactref element="U7" pad="P$25"/>
@@ -2240,9 +2241,9 @@ design rules under a new name.</description>
 <signal name="MIC1P">
 <contactref element="U7" pad="P$23"/>
 <contactref element="MIC" pad="1"/>
-<wire x1="70.25" y1="24.819" x2="71.809" y2="24.819" width="0.254" layer="16"/>
-<wire x1="71.809" y1="24.819" x2="74.295" y2="27.305" width="0.254" layer="16"/>
-<wire x1="74.295" y1="27.305" x2="74.295" y2="28.575" width="0.254" layer="16"/>
+<wire x1="70.25" y1="24.819" x2="74.984" y2="24.819" width="0.254" layer="16"/>
+<wire x1="74.984" y1="24.819" x2="81.28" y2="31.115" width="0.254" layer="16"/>
+<wire x1="81.28" y1="31.115" x2="81.915" y2="31.115" width="0.254" layer="16"/>
 </signal>
 <signal name="KBC0">
 <contactref element="U7" pad="P$33"/>
