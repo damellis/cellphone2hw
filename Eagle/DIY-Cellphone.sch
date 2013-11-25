@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20817,6 +20817,8 @@ Source: www.kingbright.com</description>
 <part name="R1" library="cellphone-rcl" deviceset="R-US_" device="R1206" value="470"/>
 <part name="LED4" library="cellphone-led" deviceset="LED" device="SMT1206" value="13"/>
 <part name="R5" library="cellphone-rcl" deviceset="R-US_" device="R1206" value="470"/>
+<part name="MIC1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="SPK" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20907,6 +20909,8 @@ Source: www.kingbright.com</description>
 <instance part="R1" gate="G$1" x="266.7" y="203.2" rot="R90"/>
 <instance part="LED4" gate="G$1" x="58.42" y="17.78"/>
 <instance part="R5" gate="G$1" x="58.42" y="5.08" rot="R90"/>
+<instance part="MIC1" gate="G$1" x="165.1" y="269.24" rot="R270"/>
+<instance part="SPK" gate="G$1" x="124.46" y="233.68" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -21322,10 +21326,13 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <label x="137.16" y="233.68" size="1.778" layer="95"/>
-<wire x1="116.84" y1="233.68" x2="144.78" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="233.68" x2="127" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="127" y1="233.68" x2="144.78" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="233.68" x2="144.78" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="SPEAKER" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="238.76" x2="149.86" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="SPK" gate="G$1" pin="2"/>
+<junction x="127" y="233.68"/>
 </segment>
 </net>
 <net name="SPK1P" class="0">
@@ -21337,10 +21344,13 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <label x="137.16" y="231.14" size="1.778" layer="95"/>
-<wire x1="116.84" y1="231.14" x2="142.24" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="231.14" x2="127" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="SPEAKER" gate="G$1" pin="2"/>
+<wire x1="127" y1="231.14" x2="142.24" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="228.6" x2="142.24" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="SPK" gate="G$1" pin="1"/>
+<junction x="127" y="231.14"/>
 </segment>
 </net>
 <net name="MIC1N" class="0">
@@ -21355,7 +21365,10 @@ Source: www.kingbright.com</description>
 <wire x1="157.48" y1="246.38" x2="157.48" y2="284.48" width="0.1524" layer="91"/>
 <label x="157.48" y="276.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="MIC" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="246.38" x2="165.1" y2="254" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="246.38" x2="165.1" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="MIC1" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="271.78" x2="165.1" y2="254" width="0.1524" layer="91"/>
+<junction x="165.1" y="271.78"/>
 </segment>
 </net>
 <net name="MIC2P" class="0">
@@ -21426,7 +21439,10 @@ Source: www.kingbright.com</description>
 <wire x1="175.26" y1="246.38" x2="175.26" y2="284.48" width="0.1524" layer="91"/>
 <label x="175.26" y="276.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="MIC" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="246.38" x2="167.64" y2="254" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="246.38" x2="167.64" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="MIC1" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="271.78" x2="167.64" y2="254" width="0.1524" layer="91"/>
+<junction x="167.64" y="271.78"/>
 </segment>
 </net>
 <net name="KBC0" class="0">
