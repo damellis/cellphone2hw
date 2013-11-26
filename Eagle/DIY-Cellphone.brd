@@ -123,7 +123,7 @@
 <wire x1="0" y1="0" x2="0" y2="44.45" width="0" layer="20"/>
 <text x="1.905" y="1.905" size="1.778" layer="25" font="fixed">Cellphone Module
 David A. Mellis
-MMM. DD, YYYY</text>
+Nov. 26, 2013</text>
 <text x="78.74" y="43.18" size="0.8128" layer="25" font="fixed">24</text>
 <text x="76.2" y="43.18" size="0.8128" layer="25" font="fixed">25</text>
 <text x="73.66" y="43.18" size="0.8128" layer="25" font="fixed">26</text>
