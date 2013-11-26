@@ -8,22 +8,22 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="2" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="2" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="5" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="5" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="12" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -157,8 +157,8 @@ MMM. DD, YYYY</text>
 <text x="64.77" y="43.18" size="0.8128" layer="26" font="fixed" rot="MR0">30</text>
 <text x="62.23" y="43.18" size="0.8128" layer="26" font="fixed" rot="MR0">31</text>
 <rectangle x1="34.671" y1="12.954" x2="40.259" y2="18.923" layer="42"/>
-<text x="80.645" y="26.035" size="0.8128" layer="27" font="fixed" rot="R90">B</text>
-<text x="80.645" y="8.89" size="0.8128" layer="27" font="fixed" rot="R90">G</text>
+<text x="83.82" y="30.48" size="0.8128" layer="27" font="fixed" rot="R90">B</text>
+<text x="83.82" y="13.335" size="0.8128" layer="27" font="fixed" rot="R90">G</text>
 <text x="63.5" y="1.27" size="0.8128" layer="25" font="fixed" align="top-left">16</text>
 <text x="66.04" y="1.27" size="0.8128" layer="25" font="fixed" align="top-left">17</text>
 <text x="68.58" y="1.27" size="0.8128" layer="25" font="fixed" align="top-left">18</text>
@@ -2097,7 +2097,7 @@ design rules under a new name.</description>
 <contactref element="JP9" pad="2"/>
 <contactref element="R1" pad="1"/>
 <contactref element="R5" pad="1"/>
-<via x="83.185" y="31.369" extent="1-16" drill="0.6"/>
+<via x="89.535" y="30.734" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="DISP_DATA">
 <contactref element="U7" pad="P$1"/>
