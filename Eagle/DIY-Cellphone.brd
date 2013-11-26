@@ -8,21 +8,21 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="2" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="2" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="2" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="5" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="12" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -179,6 +179,12 @@ MMM. DD, YYYY</text>
 <text x="85.09" y="43.18" size="0.8128" layer="26" font="fixed" rot="MR0">GND</text>
 <text x="82.55" y="1.27" size="0.8128" layer="26" font="fixed" rot="MR0" align="top-left">VCC</text>
 <text x="85.09" y="1.27" size="0.8128" layer="26" font="fixed" rot="MR0" align="top-left">GND</text>
+<rectangle x1="7.493" y1="40.005" x2="9.398" y2="41.021" layer="30"/>
+<rectangle x1="7.62" y1="35.687" x2="9.398" y2="36.703" layer="30"/>
+<text x="89.535" y="1.27" size="0.8128" layer="26" font="fixed" rot="MR0" align="top-left">MIC</text>
+<text x="87.63" y="1.27" size="0.8128" layer="25" font="fixed" align="top-left">MIC</text>
+<text x="88.9" y="43.18" size="0.8128" layer="26" font="fixed" rot="MR0">SPK</text>
+<text x="86.995" y="43.18" size="0.8128" layer="25" font="fixed">SPK</text>
 </plain>
 <libraries>
 <library name="GSM">
@@ -1839,8 +1845,12 @@ design rules under a new name.</description>
 <element name="R5" library="cellphone-rcl" package="R1206" value="470" x="83.82" y="19.05" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="82.55" y="19.05" size="0.8128" layer="28" rot="MR270"/>
 </element>
-<element name="MIC1" library="pinhead" package="1X02" value="" x="88.265" y="3.175" rot="R180"/>
-<element name="SPK" library="pinhead" package="1X02" value="" x="88.265" y="41.275" rot="R180"/>
+<element name="MIC1" library="pinhead" package="1X02" value="" x="88.265" y="3.175" smashed="yes" rot="R180">
+<attribute name="VALUE" x="90.805" y="6.35" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="SPK" library="pinhead" package="1X02" value="" x="88.265" y="41.275" smashed="yes" rot="R180">
+<attribute name="VALUE" x="90.805" y="44.45" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC" class="1">
