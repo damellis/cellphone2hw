@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -131,7 +131,7 @@
 <hole x="128.27" y="55.88" drill="2.8"/>
 <hole x="65.405" y="55.88" drill="2.8"/>
 <hole x="65.405" y="2.54" drill="2.8"/>
-<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone (07/31/2013)</text>
+<text x="4.445" y="10.795" size="1.4224" layer="25" font="fixed">DIY Cellphone (MM/DD/YYYY)</text>
 <text x="4.445" y="8.255" size="1.4224" layer="25" font="fixed">David A. Mellis, mellis@media.mit.edu</text>
 <text x="4.445" y="5.715" size="1.4224" layer="25" font="fixed">High-Low Tech, MIT Media Lab</text>
 <text x="116.205" y="43.18" size="1.016" layer="26" font="fixed" rot="MR270">uC</text>
@@ -147,127 +147,6 @@
 <text x="3.81" y="50.165" size="1.778" layer="1" font="fixed">TOP</text>
 </plain>
 <libraries>
-<library name="GSM">
-<packages>
-<package name="M10_HD_WITHOUT_EXCLUSION">
-<wire x1="0" y1="28.5" x2="0" y2="0.5" width="0.127" layer="51"/>
-<wire x1="0" y1="28.5" x2="0.5" y2="29" width="0.127" layer="21"/>
-<wire x1="0" y1="28.5" x2="0" y2="29" width="0.127" layer="21"/>
-<wire x1="0" y1="29" x2="0.5" y2="29" width="0.127" layer="21"/>
-<wire x1="29" y1="29" x2="0.5" y2="29" width="0.127" layer="51"/>
-<wire x1="29" y1="0" x2="29" y2="29" width="0.127" layer="51"/>
-<wire x1="0.5" y1="0" x2="29" y2="0" width="0.127" layer="51"/>
-<wire x1="0.5" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="0.5" width="0.127" layer="21"/>
-<wire x1="28.5" y1="0" x2="29" y2="0" width="0.127" layer="21"/>
-<wire x1="29" y1="0" x2="29" y2="0.5" width="0.127" layer="21"/>
-<wire x1="29" y1="28.5" x2="29" y2="29" width="0.127" layer="21"/>
-<wire x1="29" y1="29" x2="28.5" y2="29" width="0.127" layer="21"/>
-<wire x1="1.4" y1="27.1" x2="1.9" y2="27.5" width="0.127" layer="51"/>
-<wire x1="1.9" y1="27.5" x2="1.9" y2="26.7" width="0.127" layer="51"/>
-<wire x1="1.9" y1="26.7" x2="1.4" y2="27.1" width="0.127" layer="51"/>
-<circle x="24.4" y="19.96" radius="2.5" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="27.1" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$2" x="0" y="25.8" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$3" x="0" y="24.5" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$4" x="0" y="23.2" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$5" x="0" y="21.9" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$6" x="0" y="20.6" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$7" x="0" y="19.3" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$8" x="0" y="12.3" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$9" x="0" y="11" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$10" x="0" y="9.7" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$11" x="0" y="8.4" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$12" x="0" y="7.1" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$13" x="0" y="5.8" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$14" x="0" y="4.5" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$15" x="0" y="3.2" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$16" x="0" y="1.9" dx="2.2" dy="0.9" layer="1" roundness="100"/>
-<smd name="P$17" x="4.75" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$18" x="6.05" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$19" x="7.35" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$20" x="8.65" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$21" x="9.95" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$22" x="11.25" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$23" x="12.55" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$24" x="13.85" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$25" x="15.15" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$26" x="16.45" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$27" x="17.75" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$28" x="19.05" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$29" x="20.35" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$30" x="21.65" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$31" x="22.95" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$32" x="24.25" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
-<smd name="P$33" x="29" y="1.9" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$34" x="29" y="3.2" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$35" x="29" y="4.5" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$36" x="29" y="5.8" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$37" x="29" y="7.1" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$38" x="29" y="8.4" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$39" x="29" y="9.7" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$40" x="29" y="11" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$41" x="29" y="12.3" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$42" x="29" y="19.3" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$43" x="29" y="20.6" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$44" x="29" y="21.9" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$45" x="29" y="23.2" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$46" x="29" y="24.5" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$47" x="29" y="25.8" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$48" x="29" y="27.1" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
-<smd name="P$49" x="24.25" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$50" x="22.95" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$51" x="21.65" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$52" x="20.35" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$53" x="19.05" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$54" x="17.75" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$55" x="16.45" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$56" x="15.15" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$57" x="13.85" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$58" x="12.55" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$59" x="11.25" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$60" x="9.95" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$61" x="8.65" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$62" x="7.35" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$63" x="6.05" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<smd name="P$64" x="4.75" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
-<text x="2.1" y="26.6" size="1.27" layer="51">1</text>
-<text x="1.2" y="1.1" size="1.27" layer="51">16</text>
-<text x="3.8" y="1.5" size="1.27" layer="51">17</text>
-<text x="23.3" y="1.5" size="1.27" layer="51">32</text>
-<text x="25.8" y="1.1" size="1.27" layer="51">33</text>
-<text x="25.8" y="26.4" size="1.27" layer="51">48</text>
-<text x="23.2" y="26.5" size="1.27" layer="51">49</text>
-<text x="3.7" y="26.4" size="1.27" layer="51">64</text>
-<text x="0" y="31.75" size="1.27" layer="25">&gt;NAME</text>
-<text x="21.59" y="31.75" size="1.27" layer="25">&gt;VALUE</text>
-<polygon width="0.127" layer="42">
-<vertex x="21.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="22.49" curve="-90"/>
-<vertex x="26.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="17.49" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="21.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="22.49" curve="-90"/>
-<vertex x="26.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="17.49" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="40">
-<vertex x="21.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="22.49" curve="-90"/>
-<vertex x="26.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="17.49" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="39">
-<vertex x="21.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="22.49" curve="-90"/>
-<vertex x="26.9" y="19.99" curve="-90"/>
-<vertex x="24.4" y="17.49" curve="-90"/>
-</polygon>
-</package>
-</packages>
-</library>
 <library name="SmartPrj">
 <packages>
 <package name="R0603-ROUND">
@@ -1216,6 +1095,142 @@ Digi-Key #423-1142-ND</description>
 <rectangle x1="-9.2964" y1="-2.286" x2="-6.7564" y2="2.286" layer="21"/>
 <rectangle x1="-3.937" y1="-2.286" x2="-1.397" y2="2.286" layer="21"/>
 </package>
+<package name="UC15">
+<wire x1="0" y1="28.5" x2="0" y2="0.5" width="0.127" layer="51"/>
+<wire x1="0" y1="28.5" x2="0.5" y2="29" width="0.127" layer="21"/>
+<wire x1="0" y1="28.5" x2="0" y2="29" width="0.127" layer="21"/>
+<wire x1="0" y1="29" x2="0.5" y2="29" width="0.127" layer="21"/>
+<wire x1="29" y1="29" x2="0.5" y2="29" width="0.127" layer="51"/>
+<wire x1="29" y1="0" x2="29" y2="29" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="29" y2="0" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="0.5" width="0.127" layer="21"/>
+<wire x1="28.5" y1="0" x2="29" y2="0" width="0.127" layer="21"/>
+<wire x1="29" y1="0" x2="29" y2="0.5" width="0.127" layer="21"/>
+<wire x1="29" y1="28.5" x2="29" y2="29" width="0.127" layer="21"/>
+<wire x1="29" y1="29" x2="28.5" y2="29" width="0.127" layer="21"/>
+<wire x1="1.4" y1="27.1" x2="1.9" y2="27.5" width="0.127" layer="51"/>
+<wire x1="1.9" y1="27.5" x2="1.9" y2="26.7" width="0.127" layer="51"/>
+<wire x1="1.9" y1="26.7" x2="1.4" y2="27.1" width="0.127" layer="51"/>
+<smd name="P$1" x="0" y="27.1" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$2" x="0" y="25.8" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$3" x="0" y="24.5" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$4" x="0" y="23.2" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$5" x="0" y="21.9" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$6" x="0" y="20.6" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$7" x="0" y="19.3" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$8" x="0" y="12.3" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$9" x="0" y="11" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$10" x="0" y="9.7" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$11" x="0" y="8.4" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$12" x="0" y="7.1" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$13" x="0" y="5.8" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$14" x="0" y="4.5" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$15" x="0" y="3.2" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$16" x="0" y="1.9" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$17" x="4.75" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$18" x="6.05" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$19" x="7.35" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$20" x="8.65" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$21" x="9.95" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$22" x="11.25" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$23" x="12.55" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$24" x="13.85" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$25" x="15.15" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$26" x="16.45" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$27" x="17.75" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$28" x="19.05" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$29" x="20.35" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$30" x="21.65" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$31" x="22.95" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$32" x="24.25" y="0" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R90"/>
+<smd name="P$33" x="29" y="1.9" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$34" x="29" y="3.2" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$35" x="29" y="4.5" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$36" x="29" y="5.8" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$37" x="29" y="7.1" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$38" x="29" y="8.4" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$39" x="29" y="9.7" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$40" x="29" y="11" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$41" x="29" y="12.3" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$42" x="29" y="19.3" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$43" x="29" y="20.6" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$44" x="29" y="21.9" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$45" x="29" y="23.2" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$46" x="29" y="24.5" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$47" x="29" y="25.8" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$48" x="29" y="27.1" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$49" x="24.25" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$50" x="22.95" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$51" x="21.65" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$52" x="20.35" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$53" x="19.05" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$54" x="17.75" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$55" x="16.45" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$56" x="15.15" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$57" x="13.85" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$58" x="12.55" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$59" x="11.25" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$60" x="9.95" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$61" x="8.65" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$62" x="7.35" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$63" x="6.05" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<smd name="P$64" x="4.75" y="29" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R270"/>
+<text x="2.1" y="26.6" size="1.27" layer="51">1</text>
+<text x="1.2" y="1.1" size="1.27" layer="51">16</text>
+<text x="3.8" y="1.5" size="1.27" layer="51">17</text>
+<text x="23.3" y="1.5" size="1.27" layer="51">32</text>
+<text x="25.8" y="1.1" size="1.27" layer="51">33</text>
+<text x="25.8" y="26.4" size="1.27" layer="51">48</text>
+<text x="23.2" y="26.5" size="1.27" layer="51">49</text>
+<text x="3.7" y="26.4" size="1.27" layer="51">64</text>
+<text x="0" y="31.75" size="1.27" layer="25">&gt;NAME</text>
+<text x="21.59" y="31.75" size="1.27" layer="25">&gt;VALUE</text>
+<smd name="P$68" x="0" y="13.6" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$67" x="0" y="14.9" dx="2.2" dy="0.9" layer="1" roundness="100"/>
+<smd name="P$65" x="29" y="13.6" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$66" x="29" y="14.9" dx="2.2" dy="0.9" layer="1" roundness="100" rot="R180"/>
+<smd name="P$108" x="4.8" y="4.9" dx="2" dy="3" layer="1"/>
+<smd name="P$103" x="8" y="4.9" dx="2" dy="3" layer="1"/>
+<smd name="P$98" x="11.4" y="4.9" dx="2" dy="3" layer="1"/>
+<smd name="P$94" x="14.6" y="4.9" dx="2" dy="3" layer="1"/>
+<smd name="P$90" x="18" y="4.9" dx="2" dy="3" layer="1"/>
+<smd name="P$85" x="21.2" y="4.9" dx="2" dy="3" layer="1"/>
+<smd name="P$107" x="4.8" y="9.7" dx="2" dy="3" layer="1"/>
+<smd name="P$102" x="8" y="9.7" dx="2" dy="3" layer="1"/>
+<smd name="P$97" x="11.4" y="9.7" dx="2" dy="3" layer="1"/>
+<smd name="P$93" x="14.6" y="9.7" dx="2" dy="3" layer="1"/>
+<smd name="P$89" x="18" y="9.7" dx="2" dy="3" layer="1"/>
+<smd name="P$84" x="21.2" y="9.7" dx="2" dy="3" layer="1"/>
+<smd name="P$106" x="4.8" y="14.5" dx="2" dy="3" layer="1"/>
+<smd name="P$101" x="8" y="14.5" dx="2" dy="3" layer="1"/>
+<smd name="P$88" x="18" y="14.5" dx="2" dy="3" layer="1"/>
+<smd name="P$83" x="21.2" y="14.5" dx="2" dy="3" layer="1"/>
+<smd name="P$105" x="4.8" y="19.3" dx="2" dy="3" layer="1"/>
+<smd name="P$100" x="8" y="19.3" dx="2" dy="3" layer="1"/>
+<smd name="P$96" x="11.4" y="19.3" dx="2" dy="3" layer="1"/>
+<smd name="P$92" x="14.6" y="19.3" dx="2" dy="3" layer="1"/>
+<smd name="P$87" x="18" y="19.3" dx="2" dy="3" layer="1"/>
+<smd name="P$82" x="21.2" y="19.3" dx="2" dy="3" layer="1"/>
+<smd name="P$104" x="4.8" y="24.1" dx="2" dy="3" layer="1"/>
+<smd name="P$99" x="8" y="24.1" dx="2" dy="3" layer="1"/>
+<smd name="P$95" x="11.4" y="24.1" dx="2" dy="3" layer="1"/>
+<smd name="P$91" x="14.6" y="24.1" dx="2" dy="3" layer="1"/>
+<smd name="P$86" x="18" y="24.1" dx="2" dy="3" layer="1"/>
+<smd name="P$81" x="21.2" y="24.1" dx="2" dy="3" layer="1"/>
+<smd name="P$80" x="10.6" y="12.9" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$77" x="12.2" y="12.9" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$74" x="13.8" y="12.9" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$71" x="15.4" y="12.9" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$79" x="10.6" y="14.5" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$76" x="12.2" y="14.5" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$73" x="13.8" y="14.5" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$70" x="15.4" y="14.5" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$78" x="10.6" y="16.1" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$75" x="12.2" y="16.1" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$72" x="13.8" y="16.1" dx="1.1" dy="1.1" layer="1"/>
+<smd name="P$69" x="15.4" y="16.1" dx="1.1" dy="1.1" layer="1"/>
+</package>
 </packages>
 </library>
 <library name="transistor">
@@ -1702,9 +1717,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U7" library="GSM" package="M10_HD_WITHOUT_EXCLUSION" value="M10_HDWITHOUT_EXCLUSION" x="88.665" y="39.274" smashed="yes" rot="MR270">
-<attribute name="NAME" x="73.044" y="8.54" size="1.27" layer="49" rot="MR0"/>
-</element>
 <element name="ANT" library="SmartPrj" package="CALVUS_5BAND_SMD_A10340_0MM_EXCLUSION" value="CALVUS_5BAND_SMD_A103400MM_EXCLUSION" x="46.628" y="13.859" smashed="yes" rot="MR270">
 <attribute name="NAME" x="45.028" y="14.559" size="1.27" layer="49" rot="MR0"/>
 <attribute name="VALUE" x="45.409" y="3.624" size="1.016" layer="28" rot="MR0"/>
@@ -1866,12 +1878,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="121.3851" y="4.445" size="0.02" layer="27" rot="R180"/>
 </element>
 <element name="JP2" library="pinhead" package="1X04" value="" x="104.394" y="55.499"/>
+<element name="U$6" library="cellphone" package="UC15" value="UC15" x="88.665" y="39.274" rot="MR270"/>
 </elements>
 <signals>
 <signal name="VCC" class="1">
-<contactref element="U7" pad="P$52"/>
-<contactref element="U7" pad="P$50"/>
-<contactref element="U7" pad="P$51"/>
 <contactref element="IC1" pad="5"/>
 <contactref element="IC1" pad="17"/>
 <contactref element="IC1" pad="38"/>
@@ -1969,9 +1979,11 @@ design rules under a new name.</description>
 <wire x1="99.695" y1="36.83" x2="101.6" y2="34.925" width="0.508" layer="1"/>
 <wire x1="101.6" y1="34.925" x2="101.6" y2="20.955" width="0.508" layer="1"/>
 <wire x1="101.6" y1="20.955" x2="99.695" y2="19.05" width="0.508" layer="1"/>
+<contactref element="U$6" pad="P$50"/>
+<contactref element="U$6" pad="P$51"/>
+<contactref element="U$6" pad="P$52"/>
 </signal>
 <signal name="ANT" class="4">
-<contactref element="U7" pad="P$43"/>
 <wire x1="68.065" y1="8.398" x2="68.065" y2="10.274" width="0.889" layer="16"/>
 <wire x1="66.922" y1="6.366" x2="68.065" y2="7.89" width="1.1684" layer="16" curve="90"/>
 <wire x1="68.065" y1="7.89" x2="68.065" y2="8.398" width="1.1684" layer="16"/>
@@ -1982,17 +1994,9 @@ design rules under a new name.</description>
 <wire x1="57.55" y1="9.922" x2="57.55" y2="8.144" width="0.4064" layer="16"/>
 <contactref element="C8" pad="1"/>
 <contactref element="L23" pad="2"/>
+<contactref element="U$6" pad="P$43"/>
 </signal>
 <signal name="GND" class="2">
-<contactref element="U7" pad="P$44"/>
-<contactref element="U7" pad="P$48"/>
-<contactref element="U7" pad="P$47"/>
-<contactref element="U7" pad="P$46"/>
-<contactref element="U7" pad="P$45"/>
-<contactref element="U7" pad="P$49"/>
-<contactref element="U7" pad="P$42"/>
-<contactref element="U7" pad="P$19"/>
-<contactref element="U7" pad="P$8"/>
 <contactref element="X1" pad="2"/>
 <contactref element="X1" pad="4"/>
 <contactref element="X1" pad="3"/>
@@ -2139,12 +2143,21 @@ design rules under a new name.</description>
 <wire x1="100.692" y1="39.481" x2="100.692" y2="41.206" width="0.4064" layer="16"/>
 <contactref element="U$2" pad="19"/>
 <wire x1="88.665" y1="31.924" x2="88.839" y2="31.75" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$44"/>
+<contactref element="U$6" pad="P$45"/>
+<contactref element="U$6" pad="P$46"/>
+<contactref element="U$6" pad="P$47"/>
+<contactref element="U$6" pad="P$48"/>
+<contactref element="U$6" pad="P$49"/>
+<contactref element="U$6" pad="P$42"/>
+<contactref element="U$6" pad="P$19"/>
+<contactref element="U$6" pad="P$8"/>
+<wire x1="76.365" y1="39.274" x2="84.455" y2="33.655" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DISP_DATA">
-<contactref element="U7" pad="P$1"/>
+<contactref element="U$6" pad="P$1"/>
 </signal>
 <signal name="SIM_VDD">
-<contactref element="U7" pad="P$12"/>
 <contactref element="X3" pad="C1"/>
 <wire x1="81.565" y1="39.274" x2="81.565" y2="32.1" width="0.254" layer="16"/>
 <wire x1="81.565" y1="32.1" x2="85.09" y2="28.575" width="0.254" layer="16"/>
@@ -2156,48 +2169,48 @@ design rules under a new name.</description>
 <via x="113.665" y="29.21" extent="1-16" drill="0.6"/>
 <wire x1="113.665" y1="29.21" x2="113.665" y2="34.624" width="0.254" layer="16"/>
 <wire x1="113.665" y1="34.624" x2="113.881" y2="34.84" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$12"/>
 </signal>
 <signal name="SIM_DATA">
-<contactref element="U7" pad="P$13"/>
 <contactref element="R3" pad="1"/>
 <wire x1="81.788" y1="42.139" x2="82.865" y2="40.3" width="0.254" layer="16"/>
 <wire x1="82.865" y1="40.3" x2="82.865" y2="39.274" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$13"/>
 </signal>
 <signal name="SIM_CLK">
-<contactref element="U7" pad="P$14"/>
 <contactref element="R2" pad="1"/>
 <wire x1="84.074" y1="42.139" x2="84.074" y2="39.365" width="0.254" layer="16"/>
 <wire x1="84.074" y1="39.365" x2="84.165" y2="39.274" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$14"/>
 </signal>
 <signal name="SIM_RST">
-<contactref element="U7" pad="P$15"/>
 <contactref element="R1" pad="1"/>
 <wire x1="85.465" y1="39.274" x2="85.465" y2="41.244" width="0.254" layer="16"/>
 <wire x1="85.465" y1="41.244" x2="86.36" y2="42.139" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$15"/>
 </signal>
 <signal name="VRTC">
-<contactref element="U7" pad="P$16"/>
 <contactref element="U$4" pad="+"/>
 <wire x1="86.765" y1="39.274" x2="95.648" y2="39.274" width="0.254" layer="16"/>
 <wire x1="95.648" y1="39.274" x2="95.885" y2="39.037" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$16"/>
 </signal>
 <signal name="DISP_CLK">
-<contactref element="U7" pad="P$2"/>
+<contactref element="U$6" pad="P$2"/>
 </signal>
 <signal name="DISP_CS">
-<contactref element="U7" pad="P$3"/>
+<contactref element="U$6" pad="P$3"/>
 </signal>
 <signal name="DISP_D/C">
-<contactref element="U7" pad="P$4"/>
+<contactref element="U$6" pad="P$4"/>
 </signal>
 <signal name="DISP_RST">
-<contactref element="U7" pad="P$5"/>
+<contactref element="U$6" pad="P$5"/>
 </signal>
 <signal name="NETLIGHT">
-<contactref element="U7" pad="P$6"/>
+<contactref element="U$6" pad="P$6"/>
 </signal>
 <signal name="PWRKEY">
-<contactref element="U7" pad="P$18"/>
 <contactref element="IC1" pad="22"/>
 <wire x1="97.492" y1="38.437" x2="97.492" y2="41.206" width="0.254" layer="16"/>
 <wire x1="88.665" y1="33.224" x2="89.739" y2="33.224" width="0.254" layer="16"/>
@@ -2206,20 +2219,20 @@ design rules under a new name.</description>
 <wire x1="90.17" y1="34.29" x2="91.44" y2="35.56" width="0.254" layer="16"/>
 <wire x1="91.44" y1="35.56" x2="94.615" y2="35.56" width="0.254" layer="16"/>
 <wire x1="94.615" y1="35.56" x2="97.492" y2="38.437" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$18"/>
 </signal>
 <signal name="SPK2P">
-<contactref element="U7" pad="P$20"/>
+<contactref element="U$6" pad="P$20"/>
 </signal>
 <signal name="SPK1N">
-<contactref element="U7" pad="P$21"/>
 <contactref element="U$5" pad="P$1"/>
 <wire x1="88.665" y1="29.324" x2="90.056" y2="29.324" width="0.254" layer="16"/>
 <wire x1="90.056" y1="29.324" x2="91.44" y2="27.94" width="0.254" layer="16"/>
 <wire x1="91.44" y1="27.94" x2="118.11" y2="27.94" width="0.254" layer="16"/>
 <wire x1="118.11" y1="27.94" x2="120.65" y2="30.48" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$21"/>
 </signal>
 <signal name="SPK1P">
-<contactref element="U7" pad="P$22"/>
 <contactref element="U$5" pad="P$2"/>
 <wire x1="88.665" y1="28.024" x2="90.086" y2="28.024" width="0.254" layer="16"/>
 <wire x1="90.086" y1="28.024" x2="90.551" y2="27.559" width="0.254" layer="16"/>
@@ -2227,9 +2240,9 @@ design rules under a new name.</description>
 <wire x1="90.551" y1="26.035" x2="91.186" y2="25.4" width="0.254" layer="16"/>
 <wire x1="91.186" y1="25.4" x2="118.11" y2="25.4" width="0.254" layer="16"/>
 <wire x1="118.11" y1="25.4" x2="120.65" y2="27.94" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$22"/>
 </signal>
 <signal name="MIC1N">
-<contactref element="U7" pad="P$24"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C9" pad="1"/>
 <contactref element="C2" pad="2"/>
@@ -2255,30 +2268,30 @@ design rules under a new name.</description>
 <wire x1="7.62" y1="25.4" x2="9.652" y2="25.53" width="0.254" layer="1"/>
 <wire x1="7.62" y1="34.29" x2="7.62" y2="31.8" width="0.254" layer="16"/>
 <wire x1="7.62" y1="31.8" x2="4.08" y2="28.26" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$24"/>
 </signal>
 <signal name="MIC2P">
-<contactref element="U7" pad="P$25"/>
+<contactref element="U$6" pad="P$25"/>
 </signal>
 <signal name="MIC2N">
-<contactref element="U7" pad="P$26"/>
+<contactref element="U$6" pad="P$26"/>
 </signal>
 <signal name="KBR0">
-<contactref element="U7" pad="P$28"/>
+<contactref element="U$6" pad="P$28"/>
 </signal>
 <signal name="KBR1">
-<contactref element="U7" pad="P$29"/>
+<contactref element="U$6" pad="P$29"/>
 </signal>
 <signal name="KBR2">
-<contactref element="U7" pad="P$30"/>
+<contactref element="U$6" pad="P$30"/>
 </signal>
 <signal name="KBR3">
-<contactref element="U7" pad="P$31"/>
+<contactref element="U$6" pad="P$31"/>
 </signal>
 <signal name="KBR4">
-<contactref element="U7" pad="P$32"/>
+<contactref element="U$6" pad="P$32"/>
 </signal>
 <signal name="MIC1P">
-<contactref element="U7" pad="P$23"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C10" pad="1"/>
 <contactref element="C5" pad="2"/>
@@ -2309,24 +2322,25 @@ design rules under a new name.</description>
 <wire x1="6.731" y1="33.02" x2="5.588" y2="33.02" width="0.254" layer="1"/>
 <via x="5.588" y="33.02" extent="1-16" drill="0.6"/>
 <wire x1="5.588" y1="33.02" x2="4.064" y2="33.02" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$23"/>
 </signal>
 <signal name="KBC0">
-<contactref element="U7" pad="P$33"/>
+<contactref element="U$6" pad="P$33"/>
 </signal>
 <signal name="KBC1">
-<contactref element="U7" pad="P$34"/>
+<contactref element="U$6" pad="P$34"/>
 </signal>
 <signal name="KBC2">
-<contactref element="U7" pad="P$35"/>
+<contactref element="U$6" pad="P$35"/>
 </signal>
 <signal name="KBC3">
-<contactref element="U7" pad="P$36"/>
+<contactref element="U$6" pad="P$36"/>
 </signal>
 <signal name="KBC4">
-<contactref element="U7" pad="P$37"/>
+<contactref element="U$6" pad="P$37"/>
 </signal>
 <signal name="ADC0">
-<contactref element="U7" pad="P$41"/>
+<contactref element="U$6" pad="P$41"/>
 </signal>
 <signal name="BUZZ">
 <contactref element="R6" pad="1"/>
@@ -2335,32 +2349,32 @@ design rules under a new name.</description>
 <wire x1="121.285" y1="5.436" x2="122.809" y2="6.96" width="0.254" layer="1"/>
 </signal>
 <signal name="KBC5">
-<contactref element="U7" pad="P$38"/>
+<contactref element="U$6" pad="P$38"/>
 </signal>
 <signal name="LIGHT_MOS">
-<contactref element="U7" pad="P$27"/>
+<contactref element="U$6" pad="P$27"/>
 </signal>
 <signal name="N$1">
-<contactref element="U7" pad="P$57"/>
+<contactref element="U$6" pad="P$57"/>
 </signal>
 <signal name="DTR">
-<contactref element="U7" pad="P$59"/>
+<contactref element="U$6" pad="P$59"/>
 </signal>
 <signal name="GPIO0">
-<contactref element="U7" pad="P$64"/>
+<contactref element="U$6" pad="P$64"/>
 </signal>
 <signal name="DBG_TXD">
-<contactref element="U7" pad="P$10"/>
+<contactref element="U$6" pad="P$10"/>
 </signal>
 <signal name="DBG_RXD">
-<contactref element="U7" pad="P$9"/>
+<contactref element="U$6" pad="P$9"/>
 </signal>
 <signal name="STATUS">
-<contactref element="U7" pad="P$54"/>
 <contactref element="LED2" pad="A"/>
 <wire x1="59.665" y1="21.524" x2="67.376" y2="21.524" width="0.254" layer="16"/>
 <wire x1="67.376" y1="21.524" x2="72.136" y2="16.764" width="0.254" layer="16"/>
 <wire x1="72.136" y1="16.764" x2="72.136" y2="7.137" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$54"/>
 </signal>
 <signal name="SIM_RSTR">
 <contactref element="X3" pad="C2"/>
@@ -2408,7 +2422,7 @@ design rules under a new name.</description>
 <wire x1="105.66" y1="9.14" x2="108.801" y2="9.14" width="0.254" layer="16"/>
 </signal>
 <signal name="RI">
-<contactref element="U7" pad="P$55"/>
+<contactref element="U$6" pad="P$55"/>
 </signal>
 <signal name="ANTENA" class="4">
 <contactref element="X1" pad="1"/>
@@ -2502,7 +2516,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="RXD1">
 <contactref element="IC1" pad="11"/>
-<contactref element="U7" pad="P$60"/>
 <contactref element="SJ2" pad="3"/>
 <wire x1="59.665" y1="29.324" x2="69.101" y2="29.324" width="0.254" layer="16"/>
 <wire x1="69.101" y1="29.324" x2="86.36" y2="12.065" width="0.254" layer="16"/>
@@ -2520,10 +2533,10 @@ design rules under a new name.</description>
 <wire x1="109.347" y1="39.243" x2="107.315" y2="41.275" width="0.254" layer="16"/>
 <wire x1="107.315" y1="41.275" x2="107.315" y2="42.983" width="0.254" layer="16"/>
 <wire x1="107.315" y1="42.983" x2="107.292" y2="43.006" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$60"/>
 </signal>
 <signal name="TXD1">
 <contactref element="IC1" pad="12"/>
-<contactref element="U7" pad="P$61"/>
 <contactref element="SJ1" pad="3"/>
 <wire x1="59.665" y1="30.624" x2="69.706" y2="30.624" width="0.254" layer="16"/>
 <wire x1="69.706" y1="30.624" x2="87.63" y2="12.7" width="0.254" layer="16"/>
@@ -2544,6 +2557,7 @@ design rules under a new name.</description>
 <wire x1="115.951" y1="36.322" x2="110.998" y2="36.322" width="0.254" layer="16"/>
 <wire x1="110.998" y1="36.322" x2="107.315" y2="40.005" width="0.254" layer="16"/>
 <wire x1="107.315" y1="40.005" x2="106.68" y2="40.005" width="0.254" layer="16"/>
+<contactref element="U$6" pad="P$61"/>
 </signal>
 <signal name="ROW6">
 <contactref element="S*" pad="P$3"/>
@@ -3031,7 +3045,7 @@ design rules under a new name.</description>
 <wire x1="126.365" y1="53.975" x2="126.365" y2="55.372" width="0.254" layer="1"/>
 </signal>
 <signal name="N$43">
-<contactref element="U7" pad="P$58"/>
+<contactref element="U$6" pad="P$58"/>
 </signal>
 <signal name="DISPLAY_DATA_OUT">
 <contactref element="U$2" pad="26"/>
@@ -3086,12 +3100,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="BUZZ_M10">
 <contactref element="SJ3" pad="3"/>
-<contactref element="U7" pad="P$39"/>
 <wire x1="78.965" y1="10.274" x2="78.994" y2="10.274" width="0.254" layer="16"/>
 <wire x1="78.994" y1="10.274" x2="78.994" y2="5.08" width="0.254" layer="16"/>
 <via x="78.994" y="5.08" extent="1-16" drill="0.6"/>
 <wire x1="78.994" y1="5.08" x2="119.126" y2="5.08" width="0.254" layer="1"/>
 <wire x1="119.126" y1="5.08" x2="119.761" y2="4.445" width="0.254" layer="1"/>
+<contactref element="U$6" pad="P$39"/>
 </signal>
 </signals>
 </board>
