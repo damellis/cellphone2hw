@@ -24727,7 +24727,6 @@ diameter 3.3 mm, vertical, grid 10.16 mm</description>
 <part name="LED2" library="led" deviceset="LED" device="SMT1206"/>
 <part name="R10" library="cellphone-rcl" deviceset="R-US_" device="R1206" value="470"/>
 <part name="U$2" library="cellphone" deviceset="HCMS-[23]97X" device=""/>
-<part name="SJ3" library="jumper" deviceset="SJ2W" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="U$6" library="cellphone" deviceset="UC15" device=""/>
 </parts>
@@ -24837,7 +24836,6 @@ diameter 3.3 mm, vertical, grid 10.16 mm</description>
 <instance part="LED2" gate="G$1" x="162.56" y="175.26" rot="R90"/>
 <instance part="R10" gate="G$1" x="177.8" y="175.26"/>
 <instance part="U$2" gate="G$1" x="58.42" y="246.38" rot="R270"/>
-<instance part="SJ3" gate="G$1" x="162.56" y="213.36" rot="R180"/>
 <instance part="JP2" gate="A" x="38.1" y="81.28"/>
 <instance part="U$6" gate="G$1" x="147.32" y="91.44"/>
 </instances>
@@ -25447,14 +25445,6 @@ diameter 3.3 mm, vertical, grid 10.16 mm</description>
 <wire x1="215.9" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
 <label x="208.28" y="78.74" size="1.778" layer="95"/>
 <pinref part="U$6" gate="G$1" pin="41-ADC0"/>
-</segment>
-</net>
-<net name="BUZZ" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="213.36" x2="167.64" y2="213.36" width="0.1524" layer="91"/>
-<label x="167.64" y="213.36" size="1.778" layer="95"/>
-<pinref part="SJ3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="KBC5" class="0">
@@ -26141,9 +26131,9 @@ diameter 3.3 mm, vertical, grid 10.16 mm</description>
 <label x="12.7" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SJ3" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="208.28" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
-<label x="162.56" y="203.2" size="1.778" layer="95" rot="R270"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="213.36" x2="170.18" y2="213.36" width="0.1524" layer="91"/>
+<label x="167.64" y="213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -26227,11 +26217,6 @@ diameter 3.3 mm, vertical, grid 10.16 mm</description>
 </segment>
 </net>
 <net name="BUZZ_M10" class="0">
-<segment>
-<pinref part="SJ3" gate="G$1" pin="3"/>
-<wire x1="162.56" y1="218.44" x2="162.56" y2="236.22" width="0.1524" layer="91"/>
-<label x="162.56" y="236.22" size="1.778" layer="95" rot="R270"/>
-</segment>
 <segment>
 <wire x1="215.9" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 <label x="208.28" y="68.58" size="1.778" layer="95"/>
