@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -24930,6 +24930,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="U$6" library="cellphone" deviceset="UC15" device=""/>
 <part name="U2" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device="SOIC14"/>
+<part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
+<part name="T3" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1"/>
 </parts>
 <sheets>
 <sheet>
@@ -25040,6 +25042,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP2" gate="A" x="38.1" y="81.28"/>
 <instance part="U$6" gate="G$1" x="147.32" y="91.44"/>
 <instance part="U2" gate="G$1" x="76.2" y="172.72" rot="R180"/>
+<instance part="T2" gate="G$1" x="60.96" y="7.62"/>
+<instance part="T3" gate="G$1" x="43.18" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -25366,6 +25370,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="76.2" y1="187.96" x2="76.2" y2="200.66" width="0.1524" layer="91"/>
 <label x="73.66" y="200.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="T2" gate="G$1" pin="E"/>
+<wire x1="63.5" y1="2.54" x2="63.5" y2="-25.4" width="0.1524" layer="91"/>
+<label x="60.96" y="-27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="T3" gate="G$1" pin="E"/>
+<wire x1="45.72" y1="20.32" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
+<label x="43.18" y="12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DISP_DATA" class="0">
 <segment>
@@ -25469,14 +25483,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="PWRKEY" class="0">
 <segment>
 <wire x1="114.3" y1="15.24" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="12.7" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
 <label x="76.2" y="12.7" size="1.778" layer="95"/>
 <pinref part="U$6" gate="G$1" pin="18-PWRKEY"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="(TMS/PCINT19)PC3"/>
-<wire x1="5.08" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
-<label x="12.7" y="55.88" size="1.778" layer="95"/>
+<pinref part="T2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="SPK2P" class="0">
@@ -26451,7 +26461,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U2" gate="G$1" pin="A1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="VDD_EXT" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="7-VDD_EXT"/>
 <wire x1="93.98" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
@@ -26463,6 +26473,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="91.44" y1="165.1" x2="91.44" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
 <junction x="78.74" y="139.7"/>
+<label x="76.2" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWRKEY_PULLDOWN" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(TMS/PCINT19)PC3"/>
+<wire x1="5.08" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+<label x="12.7" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="T2" gate="G$1" pin="B"/>
+<wire x1="58.42" y1="7.62" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
+<label x="30.48" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RESET_N" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="17-RESET_N"/>
+<wire x1="109.22" y1="15.24" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="15.24" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="T3" gate="G$1" pin="C"/>
+<wire x1="55.88" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+<label x="76.2" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RESET_N_PULLDOWN" class="0">
+<segment>
+<pinref part="T3" gate="G$1" pin="B"/>
+<wire x1="40.64" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="15.24" y="25.4" size="1.778" layer="95"/>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="(XCK1/OC1B/PCINT28)PD4"/>
+<wire x1="12.7" y1="30.48" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
