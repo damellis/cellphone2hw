@@ -6877,7 +6877,7 @@ Digi-Key #423-1142-ND</description>
 <pin name="67-GND10" x="-53.34" y="-2.54" length="middle"/>
 <pin name="65-GND9" x="53.34" y="-7.62" length="middle" rot="R180"/>
 <pin name="66-RESERVED" x="53.34" y="-2.54" length="middle" rot="R180"/>
-<pin name="81-108-GND" x="-20.32" y="-48.26" length="middle" rot="R90"/>
+<pin name="81-108-GND" x="-45.72" y="58.42" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -25062,6 +25062,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$6" gate="G$1" pin="50-VBAT_RF"/>
 <pinref part="U$6" gate="G$1" pin="51-VBAT_RF"/>
 <pinref part="U$6" gate="G$1" pin="52-VBAT_BB"/>
+<pinref part="U$6" gate="G$1" pin="53-VBAT_BB"/>
+<wire x1="170.18" y1="160.02" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="160.02" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
+<junction x="170.18" y="160.02"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC@1"/>
@@ -25379,6 +25383,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="T3" gate="G$1" pin="E"/>
 <wire x1="45.72" y1="20.32" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
 <label x="43.18" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="67-GND10"/>
+<pinref part="U$6" gate="G$1" pin="68-GND11"/>
+<wire x1="93.98" y1="88.9" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="88.9" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
+<junction x="93.98" y="88.9"/>
+<label x="53.34" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="65-GND9"/>
+<wire x1="200.66" y1="83.82" x2="236.22" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="83.82" x2="236.22" y2="76.2" width="0.1524" layer="91"/>
+<label x="233.68" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="81-108-GND"/>
+<wire x1="101.6" y1="149.86" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
+<label x="99.06" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DISP_DATA" class="0">
